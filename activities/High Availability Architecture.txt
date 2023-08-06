@@ -1,0 +1,21 @@
+HAA
+--> an operational component or system without any interruptions for extended periods
+--> multiple components working together to guarantee uninterrupted service
+--> solution to unplanned downtime and avoiding service disruptions
+--> Downtime can lead to data loss
+--> response time to users’ requests also has to be timely::available systems have to be online and responsive
+--> moves the processes to backup components, minimizing downtime 
+
+HAA Components:
+Hardware redundancy 
+Software and application redundancy 
+Data redundancy 
+
+
+Availability Levels	Maximum Downtime per Year	Downtime per Day
+One nine (90%)	36.5 days	2.4 hours
+Two nines (99%)	3.65 days	14 minutes
+Three nines (99.9%)	8.76 hours	86 seconds
+Four nines (99.99%)	52.6 minutes	8.6 seconds
+Five nines (99.999%)	5.25 minutes	0.86 seconds
+Six nines (99.9999%)	31.5 seconds	8.6 milliseconds
