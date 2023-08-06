@@ -1,0 +1,27 @@
+solace endpoint::objects created on the event broker to persist messages.
+two types: queue and topic endpoints
+
+--> topic endpoint is not same as topic
+--> topic::message property the event broker uses to route messages to their destination
+--> topic endpoint::objects that define the storage of messages for a consuming application
+
+Common characteristics of endpoint
+Topic subscriber::A consuming application uses subscriptions to route messages towards it
+Selector::A conditional statement applied to an endpoint by a consuming application to filter messages by their header and user properties.
+Queue browse::ability to read messages from a queue without removing them 
+
+Queue vs topic endpoint
+Q::producing application::message directly to a queue::referencing that queue by its name
+T::cannot, however, reference topic endpoints by name:: only persist messages routed to the topic subscription applied to the topic endpoint.
+
+Q::support multiple topic subscriptions::opic aggregation to a single consuming application::Messages persisted in queues::unaffected by subscription changes.
+T::support a single subscription:: subscription change, all messages persisted::deleted
+
+Q::processed at egress::queues persist every message even if they don’t match the selector
+T::processed on ingress::messages are only persisted::if they match both the topic subscription and the selector.
+
+Q::supports multiple customers
+T::supports single customer
+
+Q::a can be read from without removing messages
+T::require the removal of messages to be read.
