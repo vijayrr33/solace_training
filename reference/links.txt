@@ -1,0 +1,22 @@
+
+https://console.solace.cloud/login
+
+https://solace.com/products/platform/
+
+https://solace.com/products/event-broker/software/
+
+https://solace.com/products/event-broker/appliance/
+
+https://netflix.github.io/
+
+https://www.stratus.com/about/company-information/uptime-meter/
+
+facebook api documentation
+https://developers.facebook.com/docs/
+
+https://nodejs.org/en
+
+e. Postman : 
+https://www.postman.com/
+
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
