@@ -1,0 +1,458 @@
+1. Enterprise Applications [B2B or B2C or B2B2C] : Cloud Computing :: Public Cloud + Private Cloud + Hybrid Cloud ::
+
+What are the fundamental architecture concepts that we need to know of:
+
+a. Virtualization
+b. Multi-tenancy
+c. SNA :: Shared Nothing Architecture
+
+2. Middleware Tech:: Enterprise Application :: What are the different layers [Top 3] that makes an "enterprise app":
+
+a. Front-end layer/Front-end 
+b. Middleware 
+c. Back-end
+
+
+a. Front-end layer/Front-end - HTML5/CSS3, ReactJS/AngularJS/VueJS + Data storage on the browser
+b. Middleware - Events/Data integration/messages-queues/etc
+c. Back-end - data storages :: Different types of data stores : RDBMS/NoSQL + File based storage + In-memory storage
+
+3. Application --> Data :: Data Storages/State :: What are the different data states that can be maintained: 
+
+a. Persistent state - State of the data is maintained even if the power of the devices is ON/OFF
+b. Non-persistent state - State of the data is ONLY maintained till the power is ON/for a limited period of time
+
+Speed of the data retrieval/modification :: IO Actions [Input/Actions]
+
+4. Data --> What are the types of data that we can work with? [Application space --> What are the types of data/data classification]:
+
+a. Structured data - Data that will have a data-type associated with it [fname/lname - String/char , age/salary - int, address - string/varchar]
+ 
+b. Unstructured data - No data-type associated with it [eg : Images/Video/Satellite Images + Map data [Lat/Long]]
+
+5. When an engineer is coding :: What are the top 2 baseline factors that needs to be considered to ensure an optimized code design:
+
+- Time complexity --> Loops & Loop constructs :: Iterator [for/while/ranges & Conditional [if..else/etc + while]
+- Space Complexity --> How the variables + types of variables [employee-age]
+
+Employee-age : min-max : 20-100
+
+What could be the data-types :
+
+a. int :: what is the range of int + What is the size of int [bit/byte of every variable]
+b. short :: what is the range of short + What is the size of short [bit/byte of every variable]
+
+6. What is a Microservices Architecture ? ::
+
+- HAA :: High Availability Architecture [Service providers/Support teams/SLA :: Uptime/Availability of the system :: 99.9% or 99.99%]
+- Decoupling or Loosely coupled application
+- Resiliency
+- Distributed applications
+
+==> What is a Microservices Architecture? :: Design Principles --> Combination of some of the best practices --> Around for a long period of time --> Tweaked/Modified :: Depending on the overall change in the tech landscape
+
+
+
+- What is it? :: Set of Architectural Patterns
+- Who manages it? :: Used within organizations/projects/Best Practices
+- Who owns the MSA? :: None
+
+
+2. How Solace uses the Cloud Services? 
+
+
+Format of the program for Solace + Roadmap :
+
+- 3 assessments : 05/08, 12/08, Milestone - 19/08 [MCQ's + Scenario]
+- Daily Activities/Daily tracker :: Reading + Practices :: Scoring :: Proactive + Consistency + Active conversation/QnA
+- Capstone project : 3-4 days at the end of the program :: Group activity : Scoring
+- 2-3 set of Group Interviews : Monitor :: weekly 
+
+
+--> Created a Solace account? 
+
+https://console.solace.cloud/login
+
+1. What is the type of Solace Account that has been created? : Free account :: Developer Class Account/Developer Service Type
+
+Depending on the type of accounts :: Accounts in Solace :: What are the account details :
+
+a. Login to Solace Console --> User and Accounts --> Account Details --> Overview tab --> Service Types
+
+- Developer/Service Class Type of account : Free [comes with a restriction] :: Create 1 instance of the Solace service
+- Enterprise Accounts
+
+2. What are the different Solace offerings that are available : Solace as a Business : Following 3 offerings :
+
+A. Cloud hosted environment :: PubSub+ Solace Cloud :: Initialize the cloud instances :: No local installation + Auto-config + Get started in NO-time [Free a/c : Event Broker Service [EBS] --> Cloud offering :: AWS/Azure/GCP/Select your private cloud]
+
+B. PubSub+ Software :: Install the Solace software in your OWN Data Centers : 2 types of accounts ::
+
+- PubSub+ Standard Account :: Free
+- PubSub+ Enterprise Account :: Paid
+
+https://solace.com/products/platform/
+
+https://solace.com/products/event-broker/software/
+
+--> Solace Appliances : Hardware Devices : As of 2023, 2 versions : v3530/v3560 :: v3530
+
+https://solace.com/products/event-broker/appliance/
+
+LTI/Mindtree --> Solace :: Citi  :: Solace Appliances
+
+==> MSA + EDA
+==> Why the need for EDA
+==> Event Broker Services
+
+==> What is Event Driven Architecture? 
+
+==> Why use EDA with tools like Solace?
+
+Solace --> Enterprise Apps --> Event Driven Architecture --> Microservices Architecture
+
+Why EDA ==> Why MSA?
+
+==> Have the answer : WHY
+
+2008-2010 [FB/LinkedIn/etc] :: Desktop --> Web Driven Apps --> Mobile First Approach + Web + Cloud Computing 
+
+Data --> Data democratization 
+
+2010-2023 : Burst of data usage/internet usage :: Volume of data ::
+
+--> FB : What is the average of volume of data used by FB in their different DC's :: Avg --> 105TB of data every 45 mins
+--> Amazon : 2 business cycles :
+
+a. Peak : Sept - Jan : 45-50 mil hits/day
+b. Normal : Feb - Sept 
+
+--> Netflix : Monolithic Architecture --> MSA Architecture : 4500-5000 services
+
+https://netflix.github.io/
+
+
+Sceanrio == HUGE data consumption + Large high transactions
+
+====> What about the applications availability ===> How long is my apps up and running ==> Uptime? 
+
+- IRCTC :: Go down very very frequently
+- Banking apps [India] :: Regular downtime 
+
+Availability : 
+
+a. DATA - Storage - HDD
+b. APPLICATION - Computation[process] - Processor/RAM
+
+===> High Availability Architecture 
+
+a. Extreme high uptime : 99.9% or 99.99% or 99.999% :: 5 9's concept/availability/reliability
+
+https://www.stratus.com/about/company-information/uptime-meter/
+
+Downtime : 
+
+- Bugs
+- Hardware/Software/network issues
+- Upgrades
+- Unexpected situation
+
+SLA :: Service Level Agreement :: Legal documents 
+
+====> IN order to achieve the HAA :: 
+
+a. Samller pieces of problem statements : Managing the problem is difficult :: Problem --> Tough to resolve the problem
+b. Independent services/smaller services that can have it's own lifecycle
+
+Own lifecycle 
+
+FB:
+
+1. What are these features in terms of application architecture : Different Microservices
+
+- Stories
+- Posts
+- Timeline
+- Bday 
+- Notification
+- etc etc etc 
+
+2. What types of services are these ? :: Web Services
+
+Types of services :
+
+- Web Services :: Any service that communicates over the Web
+- Mobile services :: Core SDK - Android/iOS
+
+3. Whenever there is a Service, services will communicate :: Other Services + 3rd party systems/External/Databases/Data stores :: How does the communication happen?
+
+Create Posts --> Database + Timeline [self] + Timeline [networks] + Activity loggers
+
+Zomato :: Order a food :: What are the bare minimum services that are fired? 
+
+- payment service [accepting the payment : UPI/DC/Netbanking/etc / COD]
+- restaurant 
+- delivery services
+- finance services : Payment details would need to be updated
+- Customer services
+- Map services 
+
+
+==> How different services communicate with each other? What is the architecture that is used for communication? What are the rules for communication ? 
+
+1. Style of communication :
+
+a. Asynchronous communication - Non-blocking comm
+b. Synchronous communication - Blocking comm
+
+--> Synchronous Comm :
+
+a. Wireless communication
+b. Web :: Http [req - > URL : https://twitter.com --> Res]
+c. Blocking :: Till the time, the loop has NOT completed its action, NO other activity can be done
+
+--> Asynchronous comm :
+
+a. NOT waiting for a specific block to be executed :: Promises 
+b. Non-blocking
+
+
+Phone calls :
+
+- Phone waiting
+- Multiple types of calls : Network/sim call + Whatsapp call/Telegram calls
+
+
+Java/C#/C++ :: Sync or Async? :: Sync
+NodeJS/Python :: Async :: Both --> Strong support --> Async 
+
+-----------> What is an API? :: Application Programming Interfaces
+
+- what are API's?
+- what are the types of API's [examples]
+- components of API's ?
+
+facebook api documentation
+https://developers.facebook.com/docs/
+
+
+{
+    status: 'connected',
+    authResponse: {
+        accessToken: '{access-token}',
+        expiresIn:'{unix-timestamp}',
+        reauthorize_required_in:'{seconds-until-token-expires}',
+        signedRequest:'{signed-parameter}',
+        userID:'{user-id}'
+    }
+}
+
+
+What are these data called as : Meta-data [data that explains other related information/data]
+
+ authResponse: {
+        accessToken: '{access-token}',
+        expiresIn:'{unix-timestamp}',
+        reauthorize_required_in:'{seconds-until-token-expires}',
+        signedRequest:'{signed-parameter}',
+        userID:'{user-id}'
+
+
+==> In order to use an API, what is the most essential thing : Endpoints :: What is an API endpoints? 
+
+a. Every service will reside in our domain/location
+b. Whenever the service needs to communicate with "Other" service :: address of that service :: Endpoints
+c. Endpoints reside :: Location within the app domain
+d. Endpoints :: URI
+
+Address of the resources on the web :
+
+a. URL : Uniform Resource Locator
+b. URI : Uniform Resource Identifier
+ 
+Address of the resources on the web : <What are these resources on the web> 
+
+Solace --> Event Broker --> Pub-Sub --> messaging format --> EDA or some other pattern for comm --> MSA --> S-S comm --> Arch --> RESTful Architecture
+
+REST Architecture :: Representational State Transfer : Resources
+
+Resources :: On the web :: 
+
+===> Every entity on the web :: Anything and everything on the web :: HTML page/image/video file/text file OR logo/text/button/header/footer or FB - create-post-service or timeline service or login or API endpoints
+
+URL : https://www.amazon.com/
+
+URI : https://www.amazon.com/Mechanical-Keyboard-MageGee-Backlit-Computer/dp/B09M9HB4PV/ref=sr_1_3?_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&keywords=gaming%2Bkeyboard&pd_rd_r=20e185e5-b8dd-4c4e-8aea-333489ac1eb3&pd_rd_w=clG02&pd_rd_wg=mPngJ&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=AXMPQ0AZY1Q3QERNAAY6&qid=1691054106&sr=8-3&th=1
+
+URL : Point to a generic location
+
+URI : Point to a specific resource + details of that resource
+
+What is the format of the URL/URI :
+
+URL : https://www.amazon.com
+
+http/s: protocol
+www: world wide web : 
+amazon.com : Domain name
+
+URL format :: <protocol>://www.<domain name>
+
+URI Format :: 
+
+<protocol>://www.<domain name>/<resource details>
+
+https://www.amazon.com/product/newproduct or catproduct/?id
+
+generic URI format : 
+
+<protocol>://www.<domain name>/<controller names>/<kind of action - new prod/modifying/deleting>/<identifier> 
+
+Whenever the Endpoints are to be accessed :: Endpoint URI or URL 
+
+- What are the types of API's/API endpoints that are present/available?
+
+a. Public API/API endpoints - exposed to the world
+b. Private API/API endpoints - restrictions :: Internal users or customers with privileges
+
+--> Service-Service communication ::
+
+a. identify the type of comm :: Sync [http] or Async or combination
+b. Fetch the service details --> Business uitilities --> Access to the API :: API Docs + API Endpoints
+c. Overall comm architecture :: REST Architecture OR some other architecture 
+d. API : Public or Private
+
+What is this concept of Publisher vs Subscriber?
+
+
+- Publisher :: Who sends messages
+- Subscribers :: receives the messages
+
+Amazon :: 
+
+- Who will be a publisher? 
+
+Image :
+
+Event Producers --> Publishers
+Event consumers --> Subscriber
+
+Solace :: Publisher-Subscriber == Producer-Consumers
+
+- What is a publisher & Subscriber? :: NOT Human beings 
+
+a.1 Dibya ---> Placing a new order in Amazon [publisher --> Create_New_Order microservice/service]
+a.2 Subscriber --> Databases_Service_Amazon + Seller_Service + Customer_Representative_Service + Notification_Services + Delivery_Services
+
+
+b. Instagram --> Akshay is making a new post [Publisher --> New_Post service/microservice] :
+
+Subscriber: 
+
+- Location services
+- Timeline services
+- List services/network service
+- Notification services
+- Tag/Hash service
+- Advertisement service
+- database 
+- logging
+
+
+c. SBI/Banking --> Akilesh's a/c money deposited [Publisher --> Transaction_Service service/microservice]
+
+Logging service/Audit service
+
+
+Solace :: Event Broker Service --> Pub-Sub :: Application Level Services
+
+==> Publisher - Subscriber 
+
+Homogeneous :: Services written using same set of language + protocols :: Pub - nodejs, Sub - NodeJS
+Heterogenous :: Services written using different languages + protocols/standards :: Pub - Java, Sub - iOS/Swift
+
+===> What are the different styles of communication architecture/message patterns between services [heterogenous/homogenous]? ::
+
+a. Point-Point communication [P2P]
+b. Request-Response/Reply
+c. Event Driven Architecture :: Pub-Sub
+
+==> Why the need for Event Driver architecture?
+
+a. Publisher will produce the events
+b. Subscribers :: whether to subscribe to the event 
+c. Even within the event consumption :: Subscriber :: Events can be consumed on real-time OR It can wait
+
+d. Publisher will always be ON state
+e. Subscriber will use the published events - AS needed basis
+
+f. In EDA : Pub ON [sending the events/messages] -----------------[Hold the events/messages :: Queues will hold the messages --> Where are the queues present --> Queue managers --> Middleware Technologies -> Event Broker Services[EBS] [Events/Message management/How to manage Pub-Sub/events/size of events/queue size/queues]:: Solace] -----------------------> Subscriber [YES or NO || ON or OFF] 
+
+Solace Offerings ::
+
+- Solace is not responsible for writing Publisher-Subscriber ["Instagram" : Pub - create-post, sub- advertisement-serv]
+- Solace responsible how the overall comm/pipeline is happening from Publisher ----------> Subscriber
+
+Amazon : India --> 40 mil hits/day --> 20 mil req/day 
+
+
+New Order --> DB_Service/Delivery/Audit/Feedback_Service
+
+
+Solace PubSub+ Cloud : 3 Main features :
+
+- Mission Control : Cluster Manager :: Operations [Env/Profiles/Queues/Message setups/Event mesh/Dynamic routing]/Administration/Configuration/API-permissions
+- Event Portals : Architects [Designer :: Publisher/Subs services]
+- Event Insights : Monitoring & Visualizations
+
+Working with Solace :
+
+a. Web GUI :: Solace PubSub+ Cloud
+b. Solace CLI [Command Line Interface]
+
+c. SolAdmin :: Solace Desktop App :: Solace Administration Activities :: Solace Appliance Management Plane
+
+Alchemy VM ::
+
+a. Java installed : java --version [minimum criteria :: Java 1.8+]
+b. Notepad++ 
+c. NodeJS installed : node -v and/OR npm -v : 
+d. Git :: 
+
+- Github a/c :: Git repositories on the cloud
+- Windows Git client : https://git-scm.com/downloads
+
+https://nodejs.org/en
+
+e. Postman : 
+
+https://www.postman.com/
+
+f. Putty
+
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+Download the putty in your local machine
+
+g. Create another 1 free pubsub+ cloud account
+
+
+Logged into the Solace console --> Clicked on Cluster manager --> Service --> Status
+
+
+
+
+
+
+Daily Activity ::
+
+- Put everything in Google Drive and share the Google Drive link
+- Using a Daily tracker actitity tracker sheet :: Share the link of the sheet with Dibya
+
+
+
+
+- Messaging [what are messaging]
+- Is it necessary that comm will happen using EDA? If no, then what are the other mechanisms? 
+
+
