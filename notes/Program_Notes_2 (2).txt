@@ -1,0 +1,3293 @@
+1. Enterprise Applications [B2B or B2C or B2B2C] : Cloud Computing :: Public Cloud + Private Cloud + Hybrid Cloud ::
+
+What are the fundamental architecture concepts that we need to know of:
+
+a. Virtualization
+b. Multi-tenancy
+c. SNA :: Shared Nothing Architecture
+
+2. Middleware Tech:: Enterprise Application :: What are the different layers [Top 3] that makes an "enterprise app":
+
+a. Front-end layer/Front-end 
+b. Middleware 
+c. Back-end
+
+
+a. Front-end layer/Front-end - HTML5/CSS3, ReactJS/AngularJS/VueJS + Data storage on the browser
+b. Middleware - Events/Data integration/messages-queues/etc
+c. Back-end - data storages :: Different types of data stores : RDBMS/NoSQL + File based storage + In-memory storage
+
+3. Application --> Data :: Data Storages/State :: What are the different data states that can be maintained: 
+
+a. Persistent state - State of the data is maintained even if the power of the devices is ON/OFF
+b. Non-persistent state - State of the data is ONLY maintained till the power is ON/for a limited period of time
+
+Speed of the data retrieval/modification :: IO Actions [Input/Actions]
+
+4. Data --> What are the types of data that we can work with? [Application space --> What are the types of data/data classification]:
+
+a. Structured data - Data that will have a data-type associated with it [fname/lname - String/char , age/salary - int, address - string/varchar]
+ 
+b. Unstructured data - No data-type associated with it [eg : Images/Video/Satellite Images + Map data [Lat/Long]]
+
+5. When an engineer is coding :: What are the top 2 baseline factors that needs to be considered to ensure an optimized code design:
+
+- Time complexity --> Loops & Loop constructs :: Iterator [for/while/ranges & Conditional [if..else/etc + while]
+- Space Complexity --> How the variables + types of variables [employee-age]
+
+Employee-age : min-max : 20-100
+
+What could be the data-types :
+
+a. int :: what is the range of int + What is the size of int [bit/byte of every variable]
+b. short :: what is the range of short + What is the size of short [bit/byte of every variable]
+
+6. What is a Microservices Architecture ? ::
+
+- HAA :: High Availability Architecture [Service providers/Support teams/SLA :: Uptime/Availability of the system :: 99.9% or 99.99%]
+- Decoupling or Loosely coupled application
+- Resiliency
+- Distributed applications
+
+==> What is a Microservices Architecture? :: Design Principles --> Combination of some of the best practices --> Around for a long period of time --> Tweaked/Modified :: Depending on the overall change in the tech landscape
+
+
+
+- What is it? :: Set of Architectural Patterns
+- Who manages it? :: Used within organizations/projects/Best Practices
+- Who owns the MSA? :: None
+
+
+2. How Solace uses the Cloud Services? 
+
+
+Format of the program for Solace + Roadmap :
+
+- 3 assessments : 05/08, 12/08, Milestone - 19/08 [MCQ's + Scenario]
+- Daily Activities/Daily tracker :: Reading + Practices :: Scoring :: Proactive + Consistency + Active conversation/QnA
+- Capstone project : 3-4 days at the end of the program :: Group activity : Scoring
+- 2-3 set of Group Interviews : Monitor :: weekly 
+
+
+--> Created a Solace account? 
+
+https://console.solace.cloud/login
+
+1. What is the type of Solace Account that has been created? : Free account :: Developer Class Account/Developer Service Type
+
+Depending on the type of accounts :: Accounts in Solace :: What are the account details :
+
+a. Login to Solace Console --> User and Accounts --> Account Details --> Overview tab --> Service Types
+
+- Developer/Service Class Type of account : Free [comes with a restriction] :: Create 1 instance of the Solace service
+- Enterprise Accounts
+
+2. What are the different Solace offerings that are available : Solace as a Business : Following 3 offerings :
+
+A. Cloud hosted environment :: PubSub+ Solace Cloud :: Initialize the cloud instances :: No local installation + Auto-config + Get started in NO-time [Free a/c : Event Broker Service [EBS] --> Cloud offering :: AWS/Azure/GCP/Select your private cloud]
+
+B. PubSub+ Software :: Install the Solace software in your OWN Data Centers : 2 types of accounts ::
+
+- PubSub+ Standard Account :: Free
+- PubSub+ Enterprise Account :: Paid
+
+https://solace.com/products/platform/
+
+https://solace.com/products/event-broker/software/
+
+--> Solace Appliances : Hardware Devices : As of 2023, 2 versions : v3530/v3560 :: v3530
+
+https://solace.com/products/event-broker/appliance/
+
+LTI/Mindtree --> Solace :: Citi  :: Solace Appliances
+
+==> MSA + EDA
+==> Why the need for EDA
+==> Event Broker Services
+
+==> What is Event Driven Architecture? 
+
+==> Why use EDA with tools like Solace?
+
+Solace --> Enterprise Apps --> Event Driven Architecture --> Microservices Architecture
+
+Why EDA ==> Why MSA?
+
+==> Have the answer : WHY
+
+2008-2010 [FB/LinkedIn/etc] :: Desktop --> Web Driven Apps --> Mobile First Approach + Web + Cloud Computing 
+
+Data --> Data democratization 
+
+2010-2023 : Burst of data usage/internet usage :: Volume of data ::
+
+--> FB : What is the average of volume of data used by FB in their different DC's :: Avg --> 105TB of data every 45 mins
+--> Amazon : 2 business cycles :
+
+a. Peak : Sept - Jan : 45-50 mil hits/day
+b. Normal : Feb - Sept 
+
+--> Netflix : Monolithic Architecture --> MSA Architecture : 4500-5000 services
+
+https://netflix.github.io/
+
+
+Sceanrio == HUGE data consumption + Large high transactions
+
+====> What about the applications availability ===> How long is my apps up and running ==> Uptime? 
+
+- IRCTC :: Go down very very frequently
+- Banking apps [India] :: Regular downtime 
+
+Availability : 
+
+a. DATA - Storage - HDD
+b. APPLICATION - Computation[process] - Processor/RAM
+
+===> High Availability Architecture 
+
+a. Extreme high uptime : 99.9% or 99.99% or 99.999% :: 5 9's concept/availability/reliability
+
+https://www.stratus.com/about/company-information/uptime-meter/
+
+Downtime : 
+
+- Bugs
+- Hardware/Software/network issues
+- Upgrades
+- Unexpected situation
+
+SLA :: Service Level Agreement :: Legal documents 
+
+====> IN order to achieve the HAA :: 
+
+a. Samller pieces of problem statements : Managing the problem is difficult :: Problem --> Tough to resolve the problem
+b. Independent services/smaller services that can have it's own lifecycle
+
+Own lifecycle 
+
+FB:
+
+1. What are these features in terms of application architecture : Different Microservices
+
+- Stories
+- Posts
+- Timeline
+- Bday 
+- Notification
+- etc etc etc 
+
+2. What types of services are these ? :: Web Services
+
+Types of services :
+
+- Web Services :: Any service that communicates over the Web
+- Mobile services :: Core SDK - Android/iOS
+
+3. Whenever there is a Service, services will communicate :: Other Services + 3rd party systems/External/Databases/Data stores :: How does the communication happen?
+
+Create Posts --> Database + Timeline [self] + Timeline [networks] + Activity loggers
+
+Zomato :: Order a food :: What are the bare minimum services that are fired? 
+
+- payment service [accepting the payment : UPI/DC/Netbanking/etc / COD]
+- restaurant 
+- delivery services
+- finance services : Payment details would need to be updated
+- Customer services
+- Map services 
+
+
+==> How different services communicate with each other? What is the architecture that is used for communication? What are the rules for communication ? 
+
+1. Style of communication :
+
+a. Asynchronous communication - Non-blocking comm
+b. Synchronous communication - Blocking comm
+
+--> Synchronous Comm :
+
+a. Wireless communication
+b. Web :: Http [req - > URL : https://twitter.com --> Res]
+c. Blocking :: Till the time, the loop has NOT completed its action, NO other activity can be done
+
+--> Asynchronous comm :
+
+a. NOT waiting for a specific block to be executed :: Promises 
+b. Non-blocking
+
+
+Phone calls :
+
+- Phone waiting
+- Multiple types of calls : Network/sim call + Whatsapp call/Telegram calls
+
+
+Java/C#/C++ :: Sync or Async? :: Sync
+NodeJS/Python :: Async :: Both --> Strong support --> Async 
+
+-----------> What is an API? :: Application Programming Interfaces
+
+- what are API's?
+- what are the types of API's [examples]
+- components of API's ?
+
+facebook api documentation
+https://developers.facebook.com/docs/
+
+
+{
+    status: 'connected',
+    authResponse: {
+        accessToken: '{access-token}',
+        expiresIn:'{unix-timestamp}',
+        reauthorize_required_in:'{seconds-until-token-expires}',
+        signedRequest:'{signed-parameter}',
+        userID:'{user-id}'
+    }
+}
+
+
+What are these data called as : Meta-data [data that explains other related information/data]
+
+ authResponse: {
+        accessToken: '{access-token}',
+        expiresIn:'{unix-timestamp}',
+        reauthorize_required_in:'{seconds-until-token-expires}',
+        signedRequest:'{signed-parameter}',
+        userID:'{user-id}'
+
+
+==> In order to use an API, what is the most essential thing : Endpoints :: What is an API endpoints? 
+
+a. Every service will reside in our domain/location
+b. Whenever the service needs to communicate with "Other" service :: address of that service :: Endpoints
+c. Endpoints reside :: Location within the app domain
+d. Endpoints :: URI
+
+Address of the resources on the web :
+
+a. URL : Uniform Resource Locator
+b. URI : Uniform Resource Identifier
+ 
+Address of the resources on the web : <What are these resources on the web> 
+
+Solace --> Event Broker --> Pub-Sub --> messaging format --> EDA or some other pattern for comm --> MSA --> S-S comm --> Arch --> RESTful Architecture
+
+REST Architecture :: Representational State Transfer : Resources
+
+Resources :: On the web :: 
+
+===> Every entity on the web :: Anything and everything on the web :: HTML page/image/video file/text file OR logo/text/button/header/footer or FB - create-post-service or timeline service or login or API endpoints
+
+URL : https://www.amazon.com/
+
+URI : https://www.amazon.com/Mechanical-Keyboard-MageGee-Backlit-Computer/dp/B09M9HB4PV/ref=sr_1_3?_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&keywords=gaming%2Bkeyboard&pd_rd_r=20e185e5-b8dd-4c4e-8aea-333489ac1eb3&pd_rd_w=clG02&pd_rd_wg=mPngJ&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=AXMPQ0AZY1Q3QERNAAY6&qid=1691054106&sr=8-3&th=1
+
+URL : Point to a generic location
+
+URI : Point to a specific resource + details of that resource
+
+What is the format of the URL/URI :
+
+URL : https://www.amazon.com
+
+http/s: protocol
+www: world wide web : 
+amazon.com : Domain name
+
+URL format :: <protocol>://www.<domain name>
+
+URI Format :: 
+
+<protocol>://www.<domain name>/<resource details>
+
+https://www.amazon.com/product/newproduct or catproduct/?id
+
+generic URI format : 
+
+<protocol>://www.<domain name>/<controller names>/<kind of action - new prod/modifying/deleting>/<identifier> 
+
+Whenever the Endpoints are to be accessed :: Endpoint URI or URL 
+
+- What are the types of API's/API endpoints that are present/available?
+
+a. Public API/API endpoints - exposed to the world
+b. Private API/API endpoints - restrictions :: Internal users or customers with privileges
+
+--> Service-Service communication ::
+
+a. identify the type of comm :: Sync [http] or Async or combination
+b. Fetch the service details --> Business uitilities --> Access to the API :: API Docs + API Endpoints
+c. Overall comm architecture :: REST Architecture OR some other architecture 
+d. API : Public or Private
+
+What is this concept of Publisher vs Subscriber?
+
+
+- Publisher :: Who sends messages
+- Subscribers :: receives the messages
+
+Amazon :: 
+
+- Who will be a publisher? 
+
+Image :
+
+Event Producers --> Publishers
+Event consumers --> Subscriber
+
+Solace :: Publisher-Subscriber == Producer-Consumers
+
+- What is a publisher & Subscriber? :: NOT Human beings 
+
+a.1 Dibya ---> Placing a new order in Amazon [publisher --> Create_New_Order microservice/service]
+a.2 Subscriber --> Databases_Service_Amazon + Seller_Service + Customer_Representative_Service + Notification_Services + Delivery_Services
+
+
+b. Instagram --> Akshay is making a new post [Publisher --> New_Post service/microservice] :
+
+Subscriber: 
+
+- Location services
+- Timeline services
+- List services/network service
+- Notification services
+- Tag/Hash service
+- Advertisement service
+- database 
+- logging
+
+
+c. SBI/Banking --> Akilesh's a/c money deposited [Publisher --> Transaction_Service service/microservice]
+
+Logging service/Audit service
+
+
+Solace :: Event Broker Service --> Pub-Sub :: Application Level Services
+
+==> Publisher - Subscriber 
+
+Homogeneous :: Services written using same set of language + protocols :: Pub - nodejs, Sub - NodeJS
+Heterogenous :: Services written using different languages + protocols/standards :: Pub - Java, Sub - iOS/Swift
+
+===> What are the different styles of communication architecture/message patterns between services [heterogenous/homogenous]? ::
+
+a. Point-Point communication [P2P]
+b. Request-Response/Reply
+c. Event Driven Architecture :: Pub-Sub
+
+==> Why the need for Event Driver architecture?
+
+a. Publisher will produce the events
+b. Subscribers :: whether to subscribe to the event 
+c. Even within the event consumption :: Subscriber :: Events can be consumed on real-time OR It can wait
+
+d. Publisher will always be ON state
+e. Subscriber will use the published events - AS needed basis
+
+f. In EDA : Pub ON [sending the events/messages] -----------------[Hold the events/messages :: Queues will hold the messages --> Where are the queues present --> Queue managers --> Middleware Technologies -> Event Broker Services[EBS] [Events/Message management/How to manage Pub-Sub/events/size of events/queue size/queues]:: Solace] -----------------------> Subscriber [YES or NO || ON or OFF] 
+
+Solace Offerings ::
+
+- Solace is not responsible for writing Publisher-Subscriber ["Instagram" : Pub - create-post, sub- advertisement-serv]
+- Solace responsible how the overall comm/pipeline is happening from Publisher ----------> Subscriber
+
+Amazon : India --> 40 mil hits/day --> 20 mil req/day 
+
+
+New Order --> DB_Service/Delivery/Audit/Feedback_Service
+
+
+Solace PubSub+ Cloud : 3 Main features :
+
+- Mission Control : Cluster Manager :: Operations [Env/Profiles/Queues/Message setups/Event mesh/Dynamic routing]/Administration/Configuration/API-permissions
+- Event Portals : Architects [Designer :: Publisher/Subs services]
+- Event Insights : Monitoring & Visualizations
+
+Working with Solace :
+
+a. Web GUI :: Solace PubSub+ Cloud
+b. Solace CLI [Command Line Interface]
+
+c. SolAdmin :: Solace Desktop App :: Solace Administration Activities :: Solace Appliance Management Plane
+
+Alchemy VM ::
+
+a. Java installed : java --version [minimum criteria :: Java 1.8+]
+b. Notepad++ 
+c. NodeJS installed : node -v and/OR npm -v : 
+d. Git :: 
+
+- Github a/c :: Git repositories on the cloud
+- Windows Git client : https://git-scm.com/downloads
+
+https://nodejs.org/en
+
+e. Postman : 
+
+https://www.postman.com/
+
+f. Putty
+
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+Download the putty in your local machine
+
+g. Create another 1 free pubsub+ cloud account
+
+
+Logged into the Solace console --> Clicked on Cluster manager --> Service --> Status
+
+Daily Activity ::
+
+- Put everything in Google Drive and share the Google Drive link
+- Using a Daily tracker actitity tracker sheet :: Share the link of the sheet with Dibya
+
+
+
+
+- Messaging [what are messaging]
+- Is it necessary that comm will happen using EDA? If no, then what are the other mechanisms? 
+
+
+--> 04/08/2023
+
+a. 1000 hours : 15 mins of sessions with Atin 
+
+b. MCQ : Automated 
+c. Scenario :: 
+
+i. Screen recording --> video files --> upload the file in Google Drive :: 2 email ID's :: video files would have to be shared
+ii. Free version of Bandicam :: Each video duration for 10 mins 
+
+iii. Steps in your scenario queries :: When a step is completed :: take a screenshot --> put all the screenshots in a word doc --> emailed to the 2 email ID's 
+
+
+
+i. Install a software Bandicam
+
+https://www.bandicam.com/
+
+
+--> Architecture :: API-First-Approach
+
+Martin Fowler :
+
+https://martinfowler.com/
+
+Chris Richardson :
+
+https://microservices.io/
+
+https://microservices.io/patterns/index.html
+
+==> What are the different message exchange pattern?
+
+- Point-to-point
+- Request-Reply/response
+- Event Driven Architecture == Pub-Sub model
+
+==> What is the need for Solace? OR What is the need for Event Broker Services?
+
+- With time :: The service versions will modify 
+- Everytime a service is updated ---> Inform all the susbcribers
+- Subscribers :: What is the version the subscriber wants to work with
+
+Netflix/Banking apps/Twitter/etc : Complex + large apps --> Tons of services [country/region specific]
+
+
+==> How does the services manage the request-reply model + Ingress-Egress flow how the state/permission/A&A would be managed [A&A - authentication and authorization]
+
+API's :
+
+- Public API's : FB API
+- Private API's : FB Advertisement Engine :: B2B contract --> FB Private API's :: A&A
+
+https://developer.linkedin.com/
+
+Free version of LinkedIn :: Fetch the user details
+
+Suddenly --> No data/no profile that could be fetched
+
+There was an endpoint update :: initial : http://<endpoint> ----------> https://<endpoint>
+
+Real estate :: Broker --> Record of all the available flats/PG's/Apt
+Zomato/Swiggy/Uber/Ola --> Brokers :: Facilitation :: <Consumer> vs <Business>
+
+Middleware :: Event Broker Services [EBS]
+
+- EBS keeps a track of the incoming and outgoing request-response OR messages
+- EBS ==> State of the messages :: How long should be the msg be available/who would have access to what messages
+- EBS ==> Ingress-Egress facilities are handled well
+
+Ingress --> Incoming requests
+Egress --> Outgoing responses
+
+==> Few million events that gets generated on a regular basis :: Capacity + Throttle
+
+a. What is the capacity of the tool/software/hardware to handle the request
+b. Subscribers --> Consume + Process :: What speed the subscriber can consume the data + Event is consumed BUT there is an error in consumption --> who will handle the error :: EBS
+
+c. How to handle the failover mechanism 
+
+d. Subscriber :: NO more events for next 30 mins
+
+
+==> How can I work with Solace? What are the different ways by which we can interact with Solace env :
+
+a. PubSub+ cloud
+b. CLI
+c. Solace API's 
+
+Solace :
+
+- Event Broker Service :: PubSub+ OR Solace API's 
+- Appliances
+
+Solace API's :
+
+- Solace supports multiple languages
+- Solace supports multiple protocols 
+
+https://solace.com/downloads/ --> Solace API's : Multiple language support :: C/Java/.NET/iOS/Python/NodeJS/etc
+
+WebGUI :: PubSub+ Cloud or PubSub+ software :: Using the Solace API's
+
+NodeJS : Sync + Async
+
+https://docs.solace.com/API/Messaging-APIs/NodeJS-API/node-js-home.htm
+https://tutorials.solace.dev/nodejs
+https://github.com/SolaceSamples/solace-samples-nodejs
+
+Documentation link for Solace : https://docs.solace.com/#splearning
+
+
+NodeJS :: 
+
+- How can I setup the servers/how to read files in NodeJS
+
+NodeJS ::
+
+a. Open source + free
+b. Syntaxes of NodeJS is easier for beginner 
+c. Extremely memory friendly footprint :: Mobile apps/IoT apps 
+d. Tons of documentation
+e. Java_Script based framework :: Server side framework
+f. With NodeJS :: Request-Response model :: Send and receive data based on the HTTP request 
+
+Try the programs either in VM/local machine :: NodeJS
+
+- NodeJS env
+- Notepad++
+- CMD
+
+NodeJS --> NPM :: Node Package Manager : https://www.npmjs.com/
+
+CentOS --> package management --> RPM packages :: RPM : Redhat package manager
+
+NodeJS :  Request-Response model :: Send and receive data based on the HTTP request 
+
+VM :: C:/nodecode
+
+Save a NodeJS file :: What is the extension :: .js
+
+File name: server.js
+
+To execute a NodeJS code with an editor like Notepad++ ::
+
+CMD --> Navigate to the directory [where the NodeJS code is present] --> node server.js [node <filename with extension[.js]]
+
+Hostname : 127.0.0.1
+
+What is this IP address? :: Loopback address
+
+Execute the server env in our local machine :: 3 different local IP address::
+
+- localhost
+- 0.0.0.0
+- 127.0.0.1
+
+Whenever an IP address ::
+
+Loopback : 127.0.0.1
+DHCP/DNS/Default Gateway : Wi-fi :: 10.x.x.x
+
+College network :: 192.168.x.x
+
+Classes in IP Addresses : 
+
+Class A : 0-126 : WAN
+
+Class B : 128-191 : MAN + Large internal n/w
+
+Class C : 192 - 223 : LAN
+
+Class D : 224 - 239
+Class E : 240-255
+
+<127.0.0.1> : Loopback address
+
+
+Port Numbers :: 
+
+23 --> Not working
+9090 --> working
+21 --> Not working
+2121 --> Working
+
+Computers : Hardware + Software apps :
+
+1. Physical Ports : USB port/Ethernet port - Hardware ports
+
+2. Software apps :: Virtual Ports :: 0-65535
+
+0-1200 :: Reserved for system protocols
+
+http: 80
+https: 443
+FTP : 21
+Telnet : 23
+
+1201 - 1300 :: Research purpose
+
+1301 - 65535 :: Custom applications
+
+Apache Server/Http server : 8080/9090/2121/3000 [NodeJS]
+
+MySQL Database :: 3306/3307
+
+http.createServer((req, res) ::
+
+http :: Package :: Ensuring the request-response model is working
+
+(req, res) :: parameters :
+
+req --> request being sent to the server
+res --> response from the server 
+
+Where is this server running ::
+
+<hostname>:<port number> 
+
+127.0.0.1: 2121
+
+Status Code :
+
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+All protocols communicate using Status Code :: True/False
+
+res.setHeader('Content-Type', 'text/plain')
+
+We can pass different types of content :: API/Request-Response/Web Service ::
+
+a. Text/Plain
+b. text/html
+c. XML
+d. JSON
+e. image
+
+Git : https://www.freecodecamp.org/news/git-and-github-for-beginners/
+
+PubSub+ Cloud :
+
+- Event Portal - Designer [design EDA apps + Catalog - Events | Schema | Application]
+- Event Streaming
+- Event Insights
+
+DB Schema --> Structure of the tables ==> What is the meta information of the tables
+
+Solace --> Schema ::
+
+Schema :: A set of guidelines/rules --> Set some properties + restrictions/validations
+
+test-employee-details  :: Define the rules for creating employee dataset 
+
+employee-first-name : string [min-max value]
+employee-age : int [min-max value]
+
+Storing the data rules :: In which format the rules are being specified :: 
+
+- JSON
+- XSD :: XML Schema Definition :: Schema pattern
+- DTD :: Document Type Definition
+- protobuf :: API driven approach
+
+XML --> Validation of XML data was done using DTD --> XSD
+
+Schema in Solace ::
+
+Application Domain :: What is the industry type of the project :: Banking-domain
+Rules & Validation :: Define the schema :: Schema style :: JSON/XSD/DTD/Protobuf + Define the data format
+
+Schema :: Application Domain ==========> <EBS Logic --> Data from the publisher --> check]
+
+Zomato --> Every order amount :: Float type and NOT integer
+
+EBS Transformation : Zomato-SmartWatch-App --> New Order --> Order value [int] =========> Event/msg [EBS :: check what is the data type of the order value] --> [EBS : int --> float [100 --> 100.00]] =========> Subscriber
+
+What is done with Cluster Manager? 
+
+Solace :: 2 types of event brokers ::
+
+a. Software based :: Create in the PubSub+ 
+b. Hardware based :: Appliance -> v3530/v3560
+
+==> Solace PubSub+ : Create an instance of Solace EBS 
+
+Whenever a new service is created :: Service has to be depolyed :: 
+
+Google.co.in --> Mumbai DC/Noida of Google
+
+Different locations of the DC's of AWS
+
+Services [Login/Audit/New order/product service/video service] --> Services are deployed in some DC
+
+EBS Instances :: Creating a Event Broker Service :: Deployed in a Datacenter --> That are supported by Solace
+
+EBS Instance [Account type in Solace - Developer Service class --> restriction : 1 EBS/account]  ---------------> All the activities of Solace event broker
+
+EBS Creation : https://console.solace.cloud/services/create
+
+
+Developer ::
+
+100 connections ::  Developer class --> Total number of client connection that the EBS can handle
+10GB Storage :: Developer class --> Storage size of the EBS
+
+
+EBS Instance [Account type in Solace - Developer Service class --> restriction : 1 EBS/account]  ---------------> All the activities of Solace event broker :: Different objects
+
+- Message/event data storage
+- Pub-Sub :: Event --> Topics --> messages 
+- Account activities
+- Queues
+- Topics
+- Event mechanisms
+- Logs
+
+100 connections ::  Developer class --> Total number of client connection that the EBS can handle ::
+
+--> term used is CLIENT and NOT Publisher-Subscriber
+
+--> Client ===> Business
+
+PaaS Environment :: PaaS --> Platform as a Service :: More you use, more you pay || Less you use, less you pay
+
+100 connections :: Concurrent/Simmultaneous :: At a time
+
+https://docs.solace.com/Cloud/service-class-limits.htm
+
+Solace PubSub+ :: EBS --> What are the deployment options :
+
+a. AWS - Amazon Web Services
+b. GCP - Google Cloud Platform
+c. Microsoft Azure
+d. Private Cloud
+
+Solace Broker :: Default version of Solace ver :: 10.4 [default] [10.x version] :: SolOS
+
+1. Solace :: Message VPN [what is VPN : Virtual Private Network [generic]] 
+2. Solace :: Cluster Name
+
+Naming of the video files ::
+
+Sce_01_video_01
+Sce_01_video_02
+
+Sce_02_video_01
+Sce_02_video_02
+
+Term :
+
+a. SMF : Solace Messaging Format
+b. What is an endpoint [NOT API endpoints --> Queue endpoint + topic endpoint]
+c. High Availability :: Single Node vs Multi Node architecture
+
+Quiz Session : Tue - Thu [8-10] :: Cross Group Quizzing
+
+- Finalize the list of topics
+- Each Group : 7 questions to another group || Answer 7 questions from another group
+- NO LOLLI questions
+
+Files : Data/Config/API details/Credentials/Dump the entire data
+
+File types : 
+
+- .txt
+- .xml
+- .json 
+- Excel/Word doc
+
+File Reading + File Writing
+
+E1 : Need --> NodeJS file [.js file] + .txt file [ref file] 
+
+- Write a NodeJS code 
+- Read from a .txt file
+- Data would be displayed 
+
+file name : filefs1.js - node code
+ref file : node1.txt
+
+--> Create the text file : node1.txt 
+--> Add some data 
+--> Write the node code
+
+JS reads from top to bottom, unless, there are specific calls are made
+
+E1 : fs.readFileSync
+E2 : fs.readFile
+
+Dynamic programming languages : JS/NodeJS/Python/Ruby/Scala/GoLang 
+
+If sync method/func is to be used :: Method ending with the word "sync" --> readFileSync()
+If async method :: default :: readFile()
+
+function (err, data) {
+   if (err) return console.error(err);
+   console.log(data.toString());
+
+
+Callback functions - Function within function
+
+function (err, data) { 
+
+//code
+
+}
+
+
+fs.readFile('node1.txt', function (err, data) {
+   if (err) return console.error(err);
+   console.log(data.toString());
+});
+
+
+1st func : readFile :: Inside the readFile() param :: "file name == node1.txt" 
+
+[executing a check function] :: 
+
+2nd func: function (err, data) {
+   if (err) return console.error(err);
+
+
+Before the action --> console.log(data.toString());
+
+
+//non-blocking code - async code
+
+//even with errors in the callback block :: remaining code would execute with the error logs
+
+
+var fs = require("fs");
+
+fs.readFile('node.txt', function (err, data) {
+   if (err) return console.error(err);
+   console.log(data.toString());
+});
+
+console.log("Program Ended");
+console.log("Program Ended2");
+
+
+==> How to read the text files
+==> Within the text files :: Operate on the file :
+
+- Sync
+- Async
+
+==> flow of the callback func
+
+======> Read a JSON file :: JavaScript Object Notation
+
+1. Why do we use JSON files ?
+
+a. JSON are mainly used for data carrier 
+b. One of the main areas of JSON files utility :: Configuration
+c. Why use JSON files :: <why not XML> :: JSON file processing is FASTER than XML or SQL Databases :: Processing faster --> Traversing the data + Locating a data is faster [because it uses light-weight JS]
+
+2. What is the format in which the data is stored in JSON file: 
+
+a. Key-Value pair format
+b. Key-value pair should be "unique" 
+c. Keys can have a string/number/float/list [collection] as a value
+
+fname: "Tom"
+age: 30
+
+
+emp_id : "id"
+{
+emp_fname: "Tom"
+}
+
+
+customer_fname: "Tom" --> Incorrect way to identify a unique data set
+
+Use ID's as the primary keys
+
+[{"name":"Solace1",
+
+"age":25,
+
+"language":["NodeJS","Event","Messaging"]}
+
+
+==> Create the JSON file [users1.json]
+==> Create the NodeJS file [json1.js]
+
+both the files are in the same dir
+
+Incorrect JSON file : error on the JSON file structure:
+
+node: internal/modules/cjs/loader: [Not from custom code base BUT NodeJS internals] 
+
+CJS --> Common JavaScript
+
+Solace : 
+
+console.solace.cloud
+
+Status Dashboard of Solace PubSub+ :
+
+a. High Avalability --> Single Node
+b. DMR Cluster
+
+i. Hostname : mr-connection-vh0scnp4ytw.messaging.solace.cloud
+ii. Cluster Name
+iii. Message-VPN
+
+c. Management Access : User + Passwd
+
+==> What is a cluster? :: Collection --> Servers/Databases
+
+--> Hostname
+--> High Availability :: Single Node
+
+
+Nodes :: Invidual Hosts ==> Machines [Physical/VM] 
+
+The EBS service that we are running using the Developer class a/c --> Running on a single node --> HostName
+
+Whenever a server instance is created [physical/VM] :: Will have a hostname associated
+
+Solace PubSub+ :
+
+a. EBS --> Running on a cluster
+b. How many nodes on the cluster --> 1 [Single Node] 
+c. The node will have a Host Name 
+d. Node will also have a credentials for access
+
+Using Putty :: Connect from a Windows machine to a Linux machine
+
+Tool :: Putty --> Protocol (SSH : 22) :: Local machine [Windows] ---> Remote machine [PubSub+ cloud is running] [hostname, etc is provided] 
+
+
+Tools available :
+
+a. Putty - Windows OS
+b. OpenSSH  - Linux/Mac OS
+
+Local :: Laptop/Desktop [windows] --> Remote [Node on which Solace EBS is running] --> mr-connection-vh0scnp4ytw.messaging.solace.cloud [hostname is available]
+
+Are all the port open? Yes or NO 
+
+Never a good practice to keep all the port numbers opened :: because if the ports are open ==> chances of unauthorized access and cyber attacks that can happen
+
+If SSH communication has to happen :: Putty :: Need to keep Port 22 open
+
+How to open + check if port 22 is opened in Solace account? 
+
+How to check the Port Number --> 
+
+Solace Console --> Cluster Manager --> CLick on the service [EBS] --> Manage Tab --> Port Configuration ==> Click on ... and select Edit --> Management --> Save
+
+Started the Putty --> Copied the Management Editor Username --> Entered in Putty --> Copied the Management Editor Password [selected the password + ctrl-c] --> Paste the password in putty --> A "single RIGHT-CLICK" from my mouse
+
+Connect to the Putty? 
+
+Session getting killed is a common problem :: How to resolve this problem? 
+
+Putty --> Connections --> Seconds between "keep alive" [keeps sending heart beats between the Local m/c and remote server] 
+
+Putty :: Solace CLI --> All the Solace commands are worked using Solace CLI
+
+--> Solace PubSub+ Cloud :: GUI
+--> Solace CLI [Command Line Interaction] :: Solace Commands
+
+- dir
+
+- cd /logs
+
+- dir
+
+Different log files in Solace : 
+
+a. command.log
+b. debug.log
+c. kernel.log
+d. system.log
+
+Working with EBS  :: 
+
+
+Diagram :
+
+1. What is the Solace "layer" - Event Broker Service
+
+2. What is "Shipping", "Customer History", "Credit Auth", "Email"  --> Subscriber clients/services/consumers
+
+3. What is mobile app/catalogue app/storefront app --> Publishers Clients/Services/Consumers
+
+Publisher <==EBS Service==>  Subscriber 
+
+Solace Console ==> Where can we publish or subscribe to a message OR topic? ==> Try-Me
+
+
+
+Path :: Endpoint :: What will this endpoint hold --> Secure Web Service [WSS]
+
+Publish Path [Broker URL]: wss://mr-connection-vh0scnp4ytw.messaging.solace.cloud:443
+
+Subscribe Path [Broker URL]: wss://mr-connection-vh0scnp4ytw.messaging.solace.cloud:443
+
+Hostname of the EBS :: mr-connection-vh0scnp4ytw.messaging.solace.cloud
+
+Both Pub & Sub are pointing to the same path :: Port Number : 443 [https :: Channel of data transferring would be secure]
+
+
+<Publisher> [Establish Connection ==>   Broker URL --> the location where EBS is residing] <Subscriber>
+
+Broker URL :: <Broker> + <URL>
+
+Event Broker service :: Can be of 2 types : "Software" + Hardware 
+
+If the Event Broker is a software service --> It has to run as a service :: URL/URI [API endpoints] 
+
+In order to access the event broker service [software nature] --> URI or URL :: Broker URL --> Where the broker service is running ["path" to my host + "port number"]
+
+Quick question : What resides in Endpoints? :: Service --> Web Services or the API endpoints --> business feature and functionalities --> Schema, Application Domain, Entity relationships
+
+Which side to connect first ? Sub or Pub?
+
+--> Subscribers :: There is a demand on the subscriber end, the EBS will try to check what are the incoming events/messages from Publisher
+
+
+Topic ==> Is a chapter in a book
+
+[Publisher] ---> [Publish to the topic : try-me] ------------>  [EBS : Broker URL] <------------- [Topic - try-me] <--- Subscriber-Service [Print]
+
+Once a message is published ---> Publisher is NOT bothered who is consuming the message, what happens to the message, who subscribes to the message, what is happening with the message
+
+Publisher :: Amazon --> New-Order-Service :: Captures the order details ---> Push it forward
+
+The publisher is publishing it's own topics [t1]
+
+The subscriber is subscribing to it's own topics [t2] 
+
+Step 1: "Publishing" to the topic  : try-me-2 :: Success
+Step 2: "Subscribe" to the topic  : try-me-2 :: Topic listing is working BUT the event/message has NOT been captured
+
+Create a new account [today] in Zomato --> Offers from [today] / Discounts from [today] 
+
+
+===> Publishers --> Once a topic [messages + events is published] --> only and only the subscribed topics/services can get the details
+
+Solace Pub-Sub topics are case sensitive
+
+Messages can be published in 2 ways :: Solace :: 
+
+a. Binary
+b. text
+
+Subscriber side :: List of topics being subscribed to
+Publisher side :: There is NO list of topics being published
+
+From the publisher side :: If a topic is being published and the Topic has a subscriber on the subcriber side, every new published message will be available for subscription by the subscriber service
+
+If the above is NOT the behavior, for every topic subscriptions, millions of new topics would have to be created.
+
+Topic : New-Order :: Order details different [messages are different] 
+
+Throttle Request
+
+
+1. Open the "Run"
+2. Navigated inside the directory 
+3. mkdir nodesol2
+4. cd nodesol2
+
+==> We will initialize a NodeJS application/code base
+
+Create an application :: Development + QA code + Dependencies [libraries/packages/etc etc] :: Structure --> Dependency manage
+
+==> We will initialize a NodeJS application/code base :: <from the root/dir/folder of the app> npm init
+
+npm init
+
+NPM : Node package manager : https://www.npmjs.com/
+init : initialization
+
+<from the root/dir/folder of the app> npm init 
+
+--> Ask some configuration details --> Insert the values as needed or keep the default or keep them empty
+
+--> package.json :: Package manager file [All the packages needed in the app, can be placed in this file] 
+
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "request": "^2.88.2"
+  }
+}
+
+--> Sync vs Asynchronous
+
+New things : In the async func :
+
+- setTimeout : Tries to check how long the func loop can execute before the timeout is called
+
+- Promise.resolve() : Promise is a func call in NodeJS which states that :: Once the calling functions are in the Promise loop --> they will be executed
+
+Async feature --> In NodeJS --> 
+
+a. Promises :: will have different states :
+
+i. Resolve
+ii. Await
+iii. Reject
+
+
+- .then()
+
+Async --> NodeJS :: 
+
+a. generic func calls
+b. Loops within Promise.resolve()
+c. setTimeout
+
+Install the async package 
+
+C:\nodesample\nodesol2> npm install async
+
+async0.js : 
+
+function square(x) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(Math.pow(x, 3));
+        }, 2000);
+    });
+}
+
+async function output(x) {
+    const ans = await square(x);
+    console.log(ans);
+}
+
+MicroTask.js :: Promise.resolve()
+setTimeout(logG, 0);
+
+Code Syntax 
+
+Another state of Promise : Promise { <pending> }
+
+Promise --> Promise function (whose scope is resolved()) is called in another async function, await needs to be implemented. 
+
+Promise - Resolve - Await
+
+const async = require("async");
+
+
+function square(a, b) {
+	return new Promise(resolve => {
+		setTimeout(() => {
+			resolve(a + b);
+		}, 2000);
+	});
+}
+
+async function output(c, d, e) {
+	const ans = await square(c, d, e);
+	console.log(ans);
+	console.log(e);
+}
+
+async function output1(x, y) {
+	const ans1 = await square(x,y);
+	console.log(ans1);
+	// console.log(e);
+}
+
+output(10, 20, 20);
+output1(45, 45);
+
+Practice sync/async code base for NodeJS
+
+Anyone having Github issues?
+
+https://www.freecodecamp.org/news/git-and-github-for-beginners/
+
+Solace --> Within Solace
+
+- EBS --> Cluster Manager + Schema + App Domains
+- data centers
+- Port no. config
+- Solace CLI : How to connect through Putty/Hostnames/Management Creds/dir/cd /logs
+- Pub-Sub : Try Me
+- What is the structure of the connection :: Broker URL's 
+
+EBS --> Pub-Sub :: Queues
+
+1. What are queues? :
+
+- Storage of the messages/event data 
+- Event data/message packets that comes from publisher
+- Queue :: Temp storage :: The storage is used between Publisher events vs Subscriber events
+- Queues communicate with Topics to hold the information/data
+
+- Publishers would publish messages to the queues --> <Directly pass the data to the subs OR Hold the data for "X" period of time]
+
+--> What is present within the queues :
+
+a. message ID's
+b. meta information about the messages
+c. Replication information
+
+Queues in Solace : Queues can be of 2 types :
+
+a. Durable queues : 
+
+- Type of persistent queue : Queue remains :: "Guaranteed delivery"
+- Durable queues can only & only be removed by the administrator of solace
+- It is the queues that identifies the state of the subscriber [wrto the topics] 
+- Durable queues will load the messages from the pub apps, irrespective the state of the subs
+- If the sub app is offline, durable queue will wait/persist the message till the subs app is ONLINE
+
+b. Non-durable queue :
+
+- Temporary queue
+- Runs on the lifecycle of a consumer/subscriber
+- As long as the client state is RUNNING, the non-durable queue is ON
+- When the client has SHUT DOWN/OFF, the non-durable queue is deleted
+- Non-persistent 
+
+Solace handles both persistent & non-persistent event storages using queues.
+
+HAA :: High Availability Architecture :: 99.99% uptime
+
+Solace : Software EBS + Hardware EBS :: HAA :: 99.9% 
+
+Another feature of Solace queues is :
+
+a. Persistent Storage 
+b. Guaranteed Delivery
+
+2. Why do we need queues?
+
+- Storages
+- Ensures message delivery
+- Maintain the state of load between the PUB and SUB
+
+3. How to setup queues :
+a. Web GUI
+b. Solace CLI
+4. Queues parameters
+5. Queue stats
+
+How to setup the Queues using PubSub+ Cloud :: WebGUI
+
+cluster manager <-----event broker service <---- Queues
+
+Cluster Manager --> EBS --> Manage Tab --> Queues --> "Create Queue"
+
+Queue configuration/setting :
+
+a. Incomi==> Incoming & Outgoing : messages coming and going out wrto queue
+
+Queues can do bi-directional or uni-directional comm
+
+b. Message queued quota :: Size of the "overall" messages that can be present in the queue
+
+c. Access Type : 
+
+- Exclusive : s2 - s3 - s1 - s4
+- Non-exclusive : <Round robin fashion> 
+
+Subscription request has been made for a topic [/hello] to the queue in the following manner :
+
+-> S2
+-> S3
+-> S1
+-> S4
+
+Place an order in Zomato :
+
+Pub: New-Order --> Restaurant || Delivery --> Customer Service 
+
+Sub : Customer Support
+
+Accounting
+Delivery
+Restaurant
+
+d. Owners : 
+
+a. Whenever a queue is created :: Who is the owner from the client [client-username :: will have some specific permissions associated with them] 
+
+b. By default :: Queue owners would have the permission to DELETE the queues
+
+
+
+Walk to a restaurant --> Sit in the table :: Can you break the table & chair? :: NO :: Because YOU are NOT the owner of the table & chair --> Non-owner entity
+
+Queues :: Different businesses/services/organizations within a business
+
+Citi Bank :: Multiple queues in EBS :: 
+
+- Transaction-queue
+- login-queue
+- customerservice-queue
+
+citi-singapore
+citi-london
+citi-dubai
+
+e. Non-owner Permission 
+
+No Access 
+Disallows all access.
+Read Only 
+Read-only access to the messages.
+Consume 
+Consume (read and remove) messages.
+Modify Topic 
+Consume messages or modify the topic/selector.
+Delete 
+Consume messages, modify the topic/selector or delete the Client created endpoint altogether.
+
+Consume :: Read + remove the messages
+
+f. Maximum consumer count :: This is the number of clients that can get connected from the pub & sub sides
+
+==> Queue List :: Queue listing page
+==> Select a queue :: Navigate inside the details of that queue
+
+Queues | queue01 :: Details page
+
+a. Messages Queued
+
+b. Incoming vs Outgoing rate - At pace/speed the messages comes in and goes out of the queue
+
+- Will determine how the queue capacity is working
+
+- How well the messages/events are processed by the queue
+
+- How the pub & sub services are working
+
+- 100 msgs/sec vs 10,000 msgs/sec [Think about the capacity of the Solace EBS being used]
+
+Whenever a queue is  created --> The queue ideally would subscribe to the Topics
+
+Topic Subscriptions in Queues ::
+
+
+Queues --> Select the specific queue --> Subscriptions --> Add Subsccriptions
+
+Queue --> Topic Subscription --> Messages? [NO messages]
+
+
+Queue --> Topic Subscription [subscribed] --> Messages :: Add messages --> Publish messages to the topic
+
+--> Solace API's :: NodeJS/Java/Python/etc
+
+--> Solace PubSub+ :: TryME
+
+message exchange pattern :
+
+- Point-Point :: Direct comm :: Client-receiver
+
+- Pub-Sub comm pattern :: Comm is using the EBS + Queues
+
+Point-to-Point : 
+
+With point-to-point messaging, messages sent by the producer are processed by a "single consumer"
+
+Message Exchange Patterns:
+
+Most messaging applications use the following messaging exchange patterns:
+
+Publish-Subscribe
+Point-to-Point
+Request-Reply
+
+--> Created a queue with config details 
+
+--> Within the queue --> 2 Topic subscriptions 
+
+--> Try Me :: 
+
+a. Topic 1 :: Sub --> Pub :: There was no updated on the queue
+
+b. Topic 2 :: Simply published --> Subsccription in the queue got activated --< Message queue in the queue
+
+
+Queue :
+
+a. With or without subscribe :: The messages are queued
+
+b. MessageID : Message ID is synchronization ::
+
+Queue01 : Msg ID : 1-3
+Queue02 : Msg ID : 4
+
+Queue01 --> try-me : 	2023-08-08 13:14:33 
+
+
+Sequence Number:
+N/A
+Replication State:
+Not replicated
+Replication Mate Msg ID:
+N/A
+Expiry Time:
+N/A
+Replication Group Message ID:
+rmid1:2666d-d8556d5d799-00000000-00000004
+Delivery Eligible Time:
+N/A
+Partition Key:
+Partition Key Hash:
+0
+
+Queue02 --> try-me : 	2023-08-08 13:14:33 
+
+	
+Publisher ID:
+Sequence Number:
+N/A
+Replication State:
+Not replicated
+Replication Mate Msg ID:
+N/A
+Expiry Time:
+N/A
+Replication Group Message ID:
+rmid1:2666d-d8556d5d799-00000000-00000004
+Delivery Eligible Time:
+N/A
+Partition Key:
+Partition Key Hash:
+0
+
+Queue :: 2 set of configuration :: 
+
+Queue created --> Property :: BY default the queue created :: Durable
+
+Access Type of the queue :: Exclusive 
+
+What is the maximum limit that can be used for :
+
+a. Consumer count
+b. Size of message queued
+
+
+What is the total volume of data that my Solace account can hold? 
+
+Service Type: Developer
+
+Guaranteed messaging :: Storage capacity :: 10 GB
+Client connection :: 100
+
+Queue --> Owner --> Client-username :: Where can I add a new client-username? 
+
+Cluster Manager --> EBS service --> Manage tab --> Access Control --> Client user names
+
+<pub> :: Queue :: <sub> :: Who should send the acknowledgement : Acknowledgments :
+
+a. Is ack compulsory? :: Not always compulsory [Good practice to have the ack  BUT not compulsory] 
+
+Durable vs Non-Durable queues
+
+Durable queues :: ACK is MUST
+Non-Durarable queues :: ACK is not MUST
+
+b. Is it possible to No Ack? :: No acknowledgement --> NACK :: YES NACK can be enabled
+
+c. What will be sent as an acknowledgement? :: 
+
+message/topics from queues --> subscribed --> subscriber [services] :: Fetch/receive the message + Process the message
+
+As long as the message is NOT processed, Durable Queue --> The message is NOT deleted
+
+==> Subscriber would send the ACK to the EBS, when the message is processed
+
+==> When the EBS receives a confirmation that message has been processed ==> delete the message from the queue
+
+You created : What are these entities called in terms of Solace ? :: "Objects" in Solace
+
+- EBS
+- Pub & Sub
+- Queues
+- Topic Subscriptions
+
+===> Bunch of configurations
+
+Solace uses REST Architecture --> Every entity that is created is a Resource :: Each resource would have it's own unique/object ID
+
+Event ID from 07/08 : 
+
+Event ID
+16xfzbvaj
+
+Event ID from 07/08 : 
+
+Event ID
+16xfzcihj
+
+In Solace, every entity is an Object with a unique Object ID associated with it.
+ 
+Every time an EBS is created, by default --> Message-VPN gets created
+
+Message-VPN?
+
+Every Solace object + Every actions :: Within the message-VPN
+
+All actions [creating objects/configuring objects/deleting objects] that are performed in Solace PubSub+ cloud a/c --> Message-VPN
+
+Message-VPN : 
+
+--> Message :: Solace message
+
+--> VPN :: Virtual Private Network 
+
+Developer class --> Restriction :: 1 message VPN
+
+Solace CLI :: How to work with Queues : 
+
+- Client restrictions
+- Any sort of configuration of the parameters :: Solace CLI
+- CLI is cool
+
+--> Start the CLI :
+
+- Putty
+- Port 22 is open is Solace
+- Hostname
+- Management Creds
+
+dir
+
+cd logs
+dir
+
+command.log
+-rw-r--r--  appuser    10002 14114830 Aug 08 10:03 debug.log
+-rw-r--r--  appuser    10002  1215013 Aug 08 10:03 event.log
+-rw-r--r--  appuser    10002      865 Aug 04 11:01 kernel.log
+-rw-r--r--  appuser    10002   499562 Aug 08 09:55 system.log
+
+--> configure any objects :: 
+
+Standard prompt : solace>
+
+a. enable :
+
+solace#
+
+b. configure any of the object :: config or configure
+
+solace-(configure)#
+
+Config prompt state --> back to root :: home :: solace(config) ---> solace> 
+
+If :: Go down 1 level :: exit
+
+home :: takes back to the root level
+exit :: takes back to 1 level below 
+
+developer-production-bc64t4s47ll-solace-primary-0> enable
+developer-production-bc64t4s47ll-solace-primary-0# configure
+developer-production-bc64t4s47ll-solace-primary-0(configure)# home
+developer-production-bc64t4s47ll-solace-primary-0> enable
+developer-production-bc64t4s47ll-solace-primary-0# configure
+developer-production-bc64t4s47ll-solace-primary-0(configure)# exit
+developer-production-bc64t4s47ll-solace-primary-0# exit
+
+How to use help in Solace CLI? 
+
+?
+
+?? 
+
+Root of the Solace CLI : solace> ??
+
+List of Global commands --> show
+
+solace> show ? 
+
+
+
+show                   - 	Use this command to display a variety of
+                                     configuration and statistical information
+                                     about the router.
+
+
+Help based on a specific command : <command> ? :: show ? 
+ 
+- Want to see the list of queues in my Solace a/c
+
+- Want to see the list of message-vpn in my Solace a/c
+
+- Want to see the list of client-usernames in my Solace a/c
+
+
+show queue :: Command Invalid + Missing params
+
+Correct command :  show queue * [* - all]
+
+Flag Legends :
+
+
+Flags Legend:
+I - Ingress Admin State (U=Up, D=Down)
+E - Egress  Admin State (U=Up, D=Down)
+A - Access-Type         (E=Exclusive, N=Non-Exclusive)
+S - Selector            (Y=Yes, N=No)
+D - Durability          (D=Durable, N=Non-Durable)
+P - Priority            (Y=Yes, N=No)
+
+Queue == Spool 
+
+Step : show queue *  :: Returning the list of all queues in my Solace account
+
+Step : show queue queue01 :: Get access to a specific queue 
+
+Step : show queue queue01 detail : Can we fetch more details about a queue OR all the queues
+
+solace> enable
+solace# show <queries>
+
+solace> enable
+solace# configure --> solace-(configure)
+
+solace> enable
+solace# admin --> solace-(admin)#
+
+Solace CLI, what are the levels and the modes :
+
+1. User Exec : solace>
+
+<Comes at the start of the Solace CLI>
+
+
+2. Priviliged Exec : solace#
+
+<Reach the level : solace> enable >
+
+
+3. Global Config : solace-(configure) 
+
+<Reach the level : solace# configure >
+
+
+4. Global Admin Exec : solace-(admin) 
+
+<Reach the level : solace# admin >
+
+
+show message-vpn
+
+ Invalid command input
+        show message-vpn
+                        ^
+         -> missing parameter
+
+ show message-vpn message-vpn-01 detail
+
+is there a command for session? :: To check the session details? :: show session
+
+show session detail
+
+Invalid command input
+  
+      show session detail
+                     ^
+         -> unexpected parameter
+
+
+==> Create a queue in the message VPN using Solace CLI
+
+Since a new object would be created --> Global Config
+root > enable --> configure
+
+
+1. Before creating the queue :: Define the message-spool :: message-VPN
+
+get inside the:  message-spool message-vpn <my-message-vpn-name> 
+
+solace-primary-0(configure/message-spool)
+
+2. Command to create the queue :
+
+create queue <queue name>
+
+create queue queuecli01
+
+3. After the queue is created :: Size of the queue ::
+
+max-spool-usage <value = MB]
+
+max-spool-usage 50
+
+4. Permission :: Owner + Non-owner
+
+By default :: owner --> default 
+
+Non-owner :: command : permission all <type of permission> 
+
+permission all consume
+
+5. Ensure that :: The queue object that's created --> State of the object should be always ON
+
+Any object that is created :: SHUT or NO SHUT state
+
+The queue that is created --> NO SHUT state :: command : no shut
+
+6. See the queue that we just created
+
+show queue <queue name> 
+
+show queue queuecli01
+
+7. Detailed state of the queue : 
+
+show queue <queue name> detail
+
+show queue queuecli01 detail
+
+8. Subscribing to a Topic :
+
+subscription topic <name of the topic>
+
+subscription topic hello-cli 
+
+Try creating queue from User Exec level/mode : 
+
+solace> create queue queuecli02
+
+ Invalid command input
+        create queue queuecli02
+               ^
+         -> unknown command, or command not available in current mode
+
+
+Moving from one queue to another queue + Getting into the config state of a queue with a new session ::
+
+enable
+configure
+
+message-spool message-vpn <name of the message-vpn>
+
+developer-production-bc64t4s47ll-solace-primary-0(configure/message-spool)# queue queuecli01
+developer-production-bc64t4s47ll-solace-primary-0(configure/message-spool/queue)# show queue detail
+developer-production-bc64t4s47ll-solace-primary-0(configure/message-spool/queue)# queue queue03
+
+ Invalid command input
+        queue queue03
+        ^
+         -> unknown command, or command not available in current mode
+developer-production-bc64t4s47ll-solace-primary-0(configure/message-spool/queue)# exit
+developer-production-bc64t4s47ll-solace-primary-0(configure/message-spool)# queue queue03
+developer-production-bc64t4s47ll-solace-primary-0(configure/message-spool/queue)
+
+
+-> Solace CLI : 
+
+a. Putty 
+b. Port 22 :: SSH
+
+
+--> Task :: Create a queue :: Use the assigned storage :: Developer service class : 10GB :: message-spool 
+
+message-spool ----> Message-VPN
+
+0. Create a queue --> Global config mode in the CLI 
+enable
+configure
+
+1. Start creating a queue : Initialize the message-spool message-vpn <name of the message-vpn>
+
+Mode : (configure/message-spool)#
+
+2. Create a queue 
+
+create queue <queue name> 
+
+create queue queuecli02
+
+(configure/message-spool/queue)#
+
+3. Specify the message queue size
+
+max-spool-usage <value in MB> 
+
+max-spool-usage 60
+
+4. Specify the owner permission :: default 
+
+4.a Specify the non-owner permission :: 
+
+permission all consume
+
+5. Ensure that the object created [Queue object] is never OFF :: ON :: NO SHUT
+
+6. See the queue details :: show queue <queue name> 
+7. Detail config of the queue :: show queue <queue name> detail 
+
+Every object that is created in Solace, would have an ID associated with it. This ID is unique for every resource/object that is created.
+
+Every human being in India :: Unique Aadhar number
+Every object in Solace/Resource :: Unique resource ID/object ID :: System generated ID, not part of config 
+
+Queue ID :: ID count starts from 0 [auto assigned by Solace env] 
+
+8. Subscribe to a topic 
+
+subscription topic <topic name>
+
+subscription topic hello-wed01
+
+
+Allowing Random data/msg data :: Dirty data [data poisoning/data injection/etc] :: vohjvsld  doiunsd,mc sd,noifdvjlcv sd,cnhsdo
+
+Publisher --> Events --> Messages [text/binary] --> Solace [EBS] --> Sub Services
+
+
+
+==> How does Solace communicate across the different objects ? 
+
+Queues --> Topics --> messages [Pub& Sub] 
+
+1. Amazon.com --> https://www.amazon.com --> Port: 443 + Using Https protocol + TCP + Request-Response model
+
+2. Cross a busy road --> Left + Right :: Protocol
+
+3. How does Solace communicate across the different objects ? 
+
+Queues --> Topics --> messages [Pub& Sub] 
+
+
+- Which protocol Solace has to follow? :: Solace --> messaging activities : SMF :: Solace message format
+- Protocol - Service -- Port number :: SMF works : 
+
+https://docs.solace.com/Admin/Default-Port-Numbers.htm
+
+55555	Solace Message Format (SMF)	
+55003	SMF compressed	
+55556	SMF routing	
+55443	SMF TLS / SSL (with or without compression)
+
+In a network, data communication can happen in 2 ways :
+
+- In a compressed format : Network lag is reduced + Speed is better
+vs
+- In a uncompressed format
+
+55556	SMF routing : Multiple message-VPN's are to connected
+
+	
+
+Solace supports:
+
+a. Multiple languages : Python/Java/NodeJs/C#/etc
+b. Multiple protocols : 2 types :
+
+- Solace specific protocol -  SMF :: Solace message format
+- 3rd party protocols - AMQP [Active message queue protocol] / MQTT / REST API
+
+Solace developer account : Secured SMF Host
+Enabled
+Port : 55443
+
+Virtual ports : 0-65535
+
+0-1200 : System protocols 
+1201-1300 : research purpose
+1301 - 65535 : Custom apps/protocols
+
+1. What is an event, as in Solace? 
+
+https://docs.solace.com/Get-Started/understanding-events-messaging.htm
+
+https://solace.com/blog/inside-solace-message-introduction/
+
+Events : 
+
+a. Can be anything in which there is a change of state of data
+b. Events can be generated by manual intervention OR dynamically
+
+Manual : 
+
+- click a button
+- click on tab
+
+Dynamic : 
+
+- messages would try to communicate among each other : EDA :: Pub-Sub
+
+c. What are these change of data state : Whenever we deal with data-driven app [eg : Banking/Amazon/Gaming//Zomato/etc] : What are the different states :
+
+CRUD
+
+C : Create : Create a new record in the data store
+R : Read : List of data 
+U : Update : Modify/alter the existing data : 10/08 --> 12/08
+D : Delete : Remove the record
+
+Zomato <new order> -------> <res or customer support or delivery> 
+
+Zomato <new order> ===> <Topic [NewOrderTopic-Date] = <message> : New-Order-date-resname-<items+ quan>-zipcode> </message> <=== subscribe (restaurant serv/customer serv/delivery serv) to the topic : [NewOrderTopic-Date]] 
+
+
+Zomato <modify order> ===> <Topic [ModifyOrderTopic-Date] = <message> : Modify-Order-date-resname-<items+ quan>-zipcode> </message> <=== subscribe (restaurant serv/customer serv/delivery serv) to the topic : [NewOrderTopic-Date]] 
+
+
+Zomato <delete order> ===> <Topic [DeleteOrderTopic-Date] = <message> : Delete-Order-date-resname-<items+ quan>-zipcode> </message> <=== subscribe (restaurant serv/customer serv/delivery serv) to the topic : [NewOrderTopic-Date]] 
+
+Different services ==> Create different events [CRUD] ==> Send the messages :: <Topic Subscriptions> ==> <Queues [messagesID's + meta data + Topic subs]>  <=== subscriber [subscribed to the topic]
+
+Event is a logical step
+Data --> messages --> topics --> queues :: <===Subs
+
+
+What is the structure of the message? 
+
+Laptop 1----------------> Laptop2 : LAN 
+
+Laptop 1----------------> Web : WAN
+
+TCP Packets ==> Each of the packets would have a structure associated
+
+
+What is the structure of the message? 
+
+EBS :: Event Streaming :: Read about "Event Streaming" || How event streaming works in EDA
+
+https://solace.com/blog/inside-solace-message-introduction/
+
+Solace Message structure :
+
+a. Header : Source/Delivery address/Delivery mode/return address/Port --> Meta data 
+
+b. Body : Which holds the data + Actual data --> Application data --> Payload
+
+
+==> Message exchange pattern : How the messages can move from Pub-<EBS or Queue - Topics>-Sub
+
+a. P2P
+b. Request-Reply
+c. Pub-Sub
+
+==> What are the delivery modes in Solace Messaging
+
+https://docs.solace.com/Get-Started/message-delivery-modes.htm
+
+2 types of delivery modes :
+
+a. Direct Messaging :
+
+- At times there can be the data loss
+- If the client is OFFLINE, EBS will not hold the data
+- Pub --> Sub service can communicate directly
+
+
+b. Guaranteed Messaging : Is called as Persistent messaging :: messages are stored in the EBS || High Availability of the data || Even if the client isn't online, the message will persist, untill the client consumes the messages
+
+Guaranteed messaging :: Topic subscriptions are associated with an endpoint on the "broker" rather than consuming clients
+
+Template : Ready solution or DIY :: Buckets [config params] --> data that we can work with it --> Re-usable
+
+Queue :: 
+
+Created a queue :: We assigned some configurations to that queue
+
+Queues :: Solace env --> Dynamically created --> What will be the config :: if the config is to be available :: manual approach ----------------> templatized approach
+
+Template :: Create ONCE, Reuse Again, again, again
+
+Solace --> Creating and using Templates :: Queue templates
+
+Generic Templates :: Can be used by the Pub Services OR Sub Services : Endpoint URI's 
+
+Solace : 2 types of templates ==> Endpoint Templates :
+
+a. Queue templates/Queue endpoints
+b. Topic Endpoints
+
+Endpoint links : https://docs.solace.com/Messaging/Guaranteed-Msg/Endpoint-Templates.htm
+
+https://docs.solace.com/Messaging/Guaranteed-Msg/Configuring-Endpoint-Templates.htm
+
+Queue Name Filter
+
+Zomato :: Get a list of all the users who belongs to a pincode : 400100 || 400<followed by 3 digits> || begins with 4? 
+
+Topics : try-me, hello1, hello2
+
+<business> : zomato
+<application/service> : customers
+<what is the search crtiteria> : zip code
+What is the value of the Zip code : <Specific> OR <Pattern>
+
+Pattern :: In computer science, how to define a pattern in Programming Language? :: Pattern matching :: Regex OR Regular Expression 
+
+Name begins with A and ends with O 
+
+Zip code : Begins with 4 <4 digits in the middle - any combination> 0
+
+https://www.w3schools.com/java/java_regex.asp
+
+In case of Solace :: Queue name filters OR Topic filters can be all created using Regex :: Wildcards : * and >
+
+<business> : zomato
+<application/service> : customers
+<what is the search crtiteria> : zip code
+What is the value of the Zip code : <Specific> OR <Pattern>
+
+Queue name structure : 
+
+1. zomato/customer/zipcode/* :: Will search for all the customers in ALL the zip code
+
+2. zomato/customer/zipcode/400100 :: Will search for all the customers in 400100 zip code
+
+3. zomato/customer/zipcode/400/* :: Will search for all the customers in the zip code that starts with 400<any 3 combination> 
+
+<business> : zomato
+<application/service> : orders
+<what is the search crtiteria> : city = Mumbai
+What is the sub-search criteria :: Pizza 
+Customers who ordered pizza below <sub criteria for the search> ::  Rs.200
+
+Queue filter structure : 
+
+zomato/orders/cityname=Mum/category-of-food=Pizza/ <less than 200>
+
+
+Queue template :: There is NO owner :: Queue template can be used by NON-owners or ALL
+
+Can we create a Queue-template using CLI ? :: YES
+
+==>  Create a queue template ::
+
+Queues/queue templates :: Utilize the storage :: Developer class :: message-spool --> message-vpn
+
+Steps and commands to work with Solace CLI to create and configure queue-template
+
+
+enable
+configure
+
+
+message-spool message-spool --> message-vpn
+
+message-spool message-vpn message-vpn-01
+
+(configure/message-spool)
+
+==> create queue template <qt name> 
+
+
+create queue-template qtcli01
+
+(configure/message-spool/queue-template)#
+
+==> Show the queue template list :
+
+show queue-template *
+
+==> Show the details of a queue-template :
+
+show queue-template <queue-temp name>  detail
+
+show queue-template qtcli01 detail
+
+==> Set a name filter for the queue-template
+
+(configure/message-spool/queue-template)# name-filter <name>
+
+name-filter zomato/customers/pin/*
+
+==> Modify the message queue size :
+
+(configure/message-spool/queue-template)# max-spool-usage 70
+
+
+developer-production-bc64t4s47ll-solace-primary-0(configure/message-spool/queue-template)# permission all consume
+developer-production-bc64t4s47ll-solace-primary-0(configure/message-spool/queue-template)# permission all modify-topic
+
+
+Queue Template :: Durability Override 
+
+By default :: Whenever a client creates a queue template :: By default :: Durable nature
+
+Modify the state of this durability of the queue :
+
+(configure/message-spool/queue-template)# durability-overview [none | Non-Durable] 
+
+==> change the durable status of the queue-template : durability-override [none | non-durable]
+
+At the time of creating a queue template, if the durability status is : Non-Durable, it will remain Non-Durable
+
+==> Modify the access type :
+
+solace-primary-0(configure/message-spool/queue-template)# access-type [exclusive | non-exclusive]
+solace-primary-0(configure/message-spool/queue-template)# access-type non-exclusive
+
+==> How to enable/disable OR allow/disallow Consumer Acknowledgement Propagation [ACK]
+
+Disable the consumer-ack 
+
+(configure/message-spool/queue-template)# no consumer-ack-propagation
+
+show queue-template qtcli01 detail
+
+==> Enable consumer ack
+
+(configure/message-spool/queue-template)# consumer-ack-propagation
+
+Solace : Templates : Query name filter --> Wilcards [Regex] --> * & >
+
+1. animals/domestic/* : Will capture everything at the level of /* BUT not the level of /*/
+
+Capture : 
+
+a. animals/domestic/cats
+b. animals/domestic/dogs
+c. animals/domestic/rabbit
+
+NOT Capture :
+
+a. animals/domestic/dogs/beagles
+b. animals/domestic/cat/cat-type1
+
+2. animals/domestic/> : Will NOT match the level below /> || match other levels beyond />
+
+Capture :
+
+a. animals/domestic/cats
+b. animals/domestic/dogs
+c. animals/domestic/dogs/beagles
+
+NOT Capture :
+
+a. animals/domestic
+
+zomato/customers/pin/* ~ zomato/customers/pin/<400100 or pattern> BUT what not match : zomato/customers/pin/Mumbai/400200 [not allowed with *]
+
+https://solace.com/blog/topic-hierarchy-best-practices/
+
+Domain/Object-type/Verb/Version/ - Taxonomy : Hierarchial Structure
+
+Weekly Assignment :: Coverage till Friday : 1pm 
+
+Weekly assessment :: Solace CLI + Solace PubSub+ WebGUI [No NodeJS]
+
+Sheet updates/Google Doc updates : 
+
+a. Notifications ON : Activity Tracker 
+b. Github : Notification : Collab on the repo : Commit --> Notification
+
+IF NOTIFICATIONS ARE NOT ON : Once in 3-4 days, send an update email. 
+
+Solace Topic YouTube link : 
+
+https://www.youtube.com/watch?v=PP1nNlgERQI
+
+fxstream/*/*
+
+zomato/city/*/*
+
+zomato/city/* 
+
+One of the natures/restriction in * wildcard is :: It can ONLY navigate a single level
+
+zomato/city/* : zomato/city/Hyd
+
+fxstream/*/* : zomato/city/Hyd/Banjara-Hills
+
+In wildcard /> : Multi-level matching 
+
+Wildcard subject : 
+
+animals/domestic/dog*
+
+Matches that are allowed :
+
+animals/domestic/dog
+animals/domestic/doggy
+
+Matches that are NOT allowed :
+
+animals/domestic/dog/beagle
+animals/domestic/cat
+
+Example 2 : Combine different wildcards together:  animals/*/cats/>
+
+Matches possible : 
+
+animals/domestic/cats/tabby/grey
+
+animals/wild/cats/leopard
+
+animals/*/*/cats/>
+
+Login to Solace Console : 3 main sections in Solace :: 
+
+a. Mission Control : Cluster manager :: Event Streaming
+
+b. Event Portal : Application Event Architecture : App Context/Schema/Designer
+
+c. Event Insights 
+
+
+Log files :: cd /logs : Solace CLI :: 4 types of log files :: data file
+
+Visualization + Monitoring 
+
+Enterprise Apps : 2 set of reporting :
+
+- Collect the data :: Metrics
+
+- Productive :: Metrics should be presented in a user-friendly manner ::  Visualization
+
+Metrics [collecting the data/log/etc] + Visualization [representing the metrics - graphs/colors/beautification]
+
+Event Insights :: Work with visualization + enterprise monitoring tools :
+
+a. DataDog : https://www.datadoghq.com/
+b. Splunk : https://www.splunk.com/
+
+Solace Console --> Manage --> Queues --> Queue Templates --> <Inside a template> :: "Client Profile"
+
+Solace Console --> Manage --> Queues --> <Inside a specific queue> :: Owner [Edit] :: "Client-usernames"
+
+What is client profile & client-usernames
+
+Console --> Manage --> Access Control --> 
+
+a. Client Profiles --> cannot create a new client profile from access control
+b. ACL Profiles --> Create the ACL profile from the access control
+c. Client Usernames --> Can create client-username from access control
+
+What is ACL? :: Access Control List
+
+MQ-Training : MS Team link1 for MQ :: Authorized to attend the training :: Allowed or Denied
+
+Comm-Training : MS Team link2 for MQ :: Authorized to attend the training :: Allowed or Denied
+
+Solace-Training : MS Team link3 for MQ :: Authorized to attend the training :: Allowed or Denied
+
+Who all can access your Gmail account : Users --> Allowed or Denied
+
+Workspace/Any other resource on the network OR on internet :: Will have permissions associated [Accees] :: Allowed | Denied
+
+ACL : Networks :: 
+
+Every activity that you do :: As a user/client :: Try to access the system/resources/network/infrastructure :: Permission :: Allow | Deny
+
+ACL : Access Control List
+
+ACL Matrix :: 
+
+Objects vs Users
+
+Objects :: Solace Objects [Message-VPN, Queues/QT/Topics/Pub-Sub]
+
+Users :: The services [MSA] which tries to communicate with Solace Objects
+
+https://docs.solace.com/Security/ACL.htm
+
+ACL --> Create some rules :: What/who is allowed and who is NOT ==> Policy
+
+Message-VPN :: message-spool + ACL Profiles
+
+1. There will be policies based on the access criteria
+2. Access criteria :: Objects + Users
+
+3. Objects --> Solace objects 
+4. Users/client-usernames --> Clients who would want to connect to the message-VPN + clients who wants to pub-sub messages in EBS
+
+Create a client-username : cu01
+
+- Enable : ON or OFF
+
+-->Whenever a Client-Username is created :: 2 bindings that needs to be done :
+
+a. Client-Profile
+b. ACL-Profile
+
+Inside a client-username :
+
+- Stats
+- Queues owned by this client-username
+- Topic endpoints owned by this client-username
+
+
+Step1 : Access Control --> Client Username --> Created a new client-username :. Enabled + Client profile + ACL profile :: Default 
+
+Step 2: Inside the newly created client-username + check --> queues/topic owned
+
+Step3 : Created a new queue --> assigned the owner with the newly created Client-username
+
+Step4 : Check the client-username --> queue ownership is available or not
+
+==> Create the client usernames using Solace CLI
+
+1. Create and configure the client-username
+
+enable
+configure
+
+solace-primary-0(configure)# : 
+
+
+create the client-user
+
+create client-username <username> message-vpn <message-vpn-name> 
+
+create client-username cucli01 message-vpn message-vpn-01
+
+(configure/client-username)#
+
+2. Configure in Client-user : assign the ACL Profile
+
+
+a. Go inside the client-username :
+
+client-username <username> message-vpn <mvpn-name> 
+
+client-username cucli01 message-vpn message-vpn-01
+
+-solace-primary-0(configure)# client-username cucli01 message-vpn message-vpn-01
+
+--> Assign a ACL profile to the CU
+
+(configure/client-username) : acl-profile <name of the profile> 
+
+acl-profile default
+
+3. Configure in Client-user : assign the Client-Profile
+
+(configure/client-username) : client-profile <name>
+
+client-profile default
+
+(configure/client-username)# client-profile default
+
+4. To see the list of the client-usernames :
+
+(configure/client-username)# show client-username *
+
+5. Enabling/Disabling of the client-username 
+
+(configure/client-username)# no shutdown
+
+ACL Profile :: Policies :: Allowed or Denied
+
+
+Solace console --> Manage --> Access Control --> ACL Profiles
+
+Client-usernames :: connect to a message-vpn
+
+
+ACL profile : acp01
+
+
+a. Client-connect : If the ACL profile is binded to a client-username : is it for Allow or Deny
+
+b. Publish Topic : Whether the client-username with which "this" ACL profile is binded : will allow  for topic publish
+
+c. Subscribe Topic :  Whether the client-username with which "this" ACL profile is binded : will allow  for topics can be subscribed
+
+
+
+
+Publish Topic --> ACL Profile [client-user] : Allowed :: STOP a few --> list of exceptions
+
+Client-connect --> IP Address :: Address format in exception :: CIDR format
+
+What is CIDR : Classless Inter Domain Routing
+
+IP address :: CIDR format :: With CIDR format, data routing becomes very efficient
+
+192.168.1.10/15
+192.168.1.10/24
+
+Step 1: Create the ACL profile :: Allow all 3 permissions 
+
+Step 2: Where can we use the ACL profiles :: Binding the client-usernames
+
+==> Solace CLI :: ACL Profile
+
+--> Create an ACL Profile + Configure the ACL Profile
+
+enable
+configure
+
+==> create the acl profile 
+
+create acl-profile <profile-name> message-vpn <mvpn-name>
+
+create acl-profile aclcli01 message-vpn message-vpn-01
+
+(configure/acl-profile)#
+
+==> Navigate inside the ACL profiles 
+
+solace(configure)# acl-profile <profile-name> message-vpn <mvpn-name>
+
+acl-profile aclcli01 message-vpn message-vpn-01
+
+==> Configure the ACL profiles :: Client-connect status
+
+(configure/acl-profile)# client-connect
+
+(configure/acl-profile/client-connect)#
+
+Policy/access for the client-connect :: default-action :: allow or deny
+
+(configure/acl-profile/client-connect)# default-action allow
+
+==> Bind a client-username with ACL profile
+
+a. Check the list of client-usernames :: configure mode in CLI --> show client-usernames
+
+exit
+exit
+
+(configure)# show client-username *
+
+cucli01 
+
+
+b. Inside the client-username : 
+
+client-username <username> message-vpn <mvpn-name> 
+
+client-username cucli01  message-vpn message-vpn-01 
+
+
+c. Bind the username with the ACL profile :
+
+(configure/client-username): acl-profile <profile name>
+
+acl-profile aclcli01
+
+ERROR:  Client Username cucli01 must be shutdown to change the ACL profile
+Command Failed
+
+(configure/client-username)# shutdown
+
+developer-production-bc64t4s47ll-solace-primary-0(configure/client-username)# shutdown
+All clients using this Client Username will be disconnected.
+Do you want to continue (y/n)? y
+
+After the shut-down : 
+
+(configure/client-username)# acl-profile aclcli01
+
+Why the need for the shut down of a client-username IF ACL profile is to be changed?
+
+==> Started a new session :: Further config the ACL profile
+
+enable
+configure
+
+(configure)# acl-profile aclcli01
+
+ Invalid command input
+        acl-profile aclcli01
+                            ^
+         -> missing parameter
+
+
+acl-profile aclcli01 message-vpn message-vpn-01
+
+==> ACL Profile (configure/acl-profile)# : Set the permission for Publish a topic
+
+
+(configure/acl-profile)# publish-topic
+
+(configure/acl-profile/publish-topic)
+
+Next step :: Add the permission :: 
+
+default-action allow/deny
+
+(configure/acl-profile/publish-topic)# default-action allow
+
+
+==> How to set the exceptions in Publish-topic :
+
+(configure/acl-profile/publish-topic)# exception <topic name/structure/taxonomy>
+
+(configure/acl-profile/publish-topic)# exception animals/domestic/cats
+
+-solace-primary-0(configure/acl-profile/publish-topic)# exception animals/domestic/cats
+ERROR:  This command can no longer be used. The replacement command is configure
+
+ > acl-profile > publish-topic > exceptions.
+Command Failed
+
+
+-----------------
+(configure/acl-profile/publish-topic)# exceptions animals/domestic/cats
+
+ Invalid command input
+        exceptions animals/domestic/cats
+                   ^
+         -> invalid parameter
+ Expected one of the following:
+      smf                      - Exception list uses SMF topic syntax.
+      mqtt                     - Exception list uses MQTT topic syntax.
+      list
+
+Working command : exceptions list animals/domestic/cats
+
+exceptions list animals/domestic/cats smf
+
+exceptions list animals/domestic/dogs animals/domestic/rabbit
+
+list : collection :: can be repeated --> update the exception list
+
+exceptions list animals/domestic/dogs animals/domestic/rabbit
+
+==> Subscribe Topic
+
+(configure/acl-profile/publish-topic)# exit
+
+developer-production-bc64t4s47ll-solace-primary-0(configure/acl-profile)#
+
+(configure/acl-profile)# subscribe-topic
+
+developer-production-bc64t4s47ll-solace-primary-0(configure/acl-profile/subscribe-topic)#
+
+==> Permission to the subscribe topic : default-action --> allow | deny
+
+(configure/acl-profile/subscribe-topic)# default-action allow
+
+
+==> Add the exception to the subscribe topic :
+
+(configure/acl-profile/subscribe-topic)# exceptions list animals/domestic/>
+
+exceptions list animals/domestic/* smf
+
+Publish-topic or Subscribe-topic in ACL profile :: Exception list :: default protocol is SMF
+
+
+(configure/acl-profile/subscribe-topic)# exceptions list animals/jungle/* mqtt
+
+ACL Pub/Sub-topics :: Exception list :: MQTT --> SMF
+ 
+
+
+==> delete
+
+(configure/acl-profile/subscribe-topic)# delete animals/jungle02/*
+
+ Invalid command input
+        delete animals/jungle02/*
+        ^
+         -> unknown command, or command not available in current mode
+
+
+What is the way to see the details of delete command, if any? 
+
+delete ?
+
+ Invalid command input
+        delete ?
+        ^
+         -> unknown command, or command not available in current mode
+
+
+How to delete a subscriber-topic exception list of ACL profile using Solace Command
+
+Everything that we create in Solace :: Object
+
+generic commands :
+
+- show
+- create
+
+Whenever an entity is to be created :: create <thing> 
+
+==> Solace Console --> Manage --> Access Control --> Client Profiles
+
+Analogy :
+
+1. Vijay : Permission to attend Solace training : ACL 
+2. Vijay : Skillsets : Theory/Handson/Comm/Behavioral/Critical thinking/Problem solving : Properties/Configuration :: Client-Profiles
+
+1. What is a client profile in Solace?
+
+https://docs.solace.com/Cloud/client-profiles.htm
+
+Client-username : The pub-sub services/application of the business :: connect + communicate with Message-VPN
+
+a. ACL Profile : What is allowed | denied :: Create a policy matrix :: Client-username vs Objects [publish/subscribe/client connect]
+
+
+Client Profiles :: Common features/configurations that can applied to different client-usernames || Grouped together
+
+Solace --> Client Profile 
+
+Where can I add the client-profile?
+
+Solace Console --> Manage tab --> Client Profile
+
+Every solace account in PubSub+ Cloud :: Comes with a default client profile
+
+Is it a possible to create a new client profile ? 
+
+Queues [queue 06] --> Binded with an owner [owner --> client-username [cu03]] --> [cu03 --> ACL profile [permissions : allow/deny] + client- profile [set of config]] 
+
+1. Create a new client profile
+2. Create a client username :: Bind the CU with a new ACL profile + Client profile
+3. Create a new queue :: Bind it with owner --> new client username 
+
+client-profile 
+
+client-username
+
+==> Create client profiles using Solace CLI 
+
+enable
+configure
+
+==> Create a client-profile + Configuration
+
+Create a client-profile  : 
+
+create client-profile <name> message-vpn <mvpn-name>
+
+create client-profile cpcli01 message-vpn message-vpn-01
+
+create client-profile cpcli01 message-vpn message-vpn-01
+
+ Invalid command input
+        create client-profile cpcli01 message-vpn message-vpn-01
+               ^
+         -> unknown command, or command not available in current mode
+
+
+The restrictions placed in the Developer Service Type 
+
+Developer Service Type  --> You cannot access :: Solace CLI + Solace PubSub+ Cloud
+
+- event insight :: Developer service class :: Account is not supported
+- Logs being created : Can I open the log files :: Developer Service type :: NO
+
+Solace --> Logs --> Migrate the log files from your a/c to DataDog/Splunk or any other server :: Feature is not supported in the developer service type
+
+==> Client-Profile :: Create the client-profile using GUI BUT not using Solace CLI
+
+Access Control :
+
+- Client-usernames
+- ACL profiles
+- Client profiles
+
+All these config details, all the permission details, all client username details :: Where are they stored ?  
+
+
+Solace Console --> Manage --> Access Control --> Client-Authentication
+
+Client Authentication :: Validating :: Against the data :: Data/records that are present ::
+
+A. Internal database - Internal database. Authentication is against Client Usernames.
+
+B. LDAP - LDAP authentication. An LDAP profile name must be provided.
+
+C. RADIUS  - RADIUS authentication. A RADIUS profile name must be provided.
+
+
+What is LDAP :: Light-Weight Directory Access Protocol 
+
+
+==> How do you authenticate users in Windows OS?
+
+==> How do you authenticate users in Linux OS?
+
+--> Public Keys or Private Keys :: Key pairs
+
+--> Certificates :: SSL Certificate or TLS Certificate :: Verizon/Symantec
+
+Keys :
+
+- Shared flat :: Key to enter the door [common key - Public key] + Closet --> Personal Key [Private key] 
+
+Communication :: Client [each of the client instances --> Private Keys] <--> Server [Public Key]
+
+
+Handshake :: Public <==> Private :: matches :: Connection is successful
+
+- Properties of the key :: These keys are encrypted and NOT plain text [HASH :: One way algorithms] 
+
+*nix env :: Key pairs for authentication :: machine[laptop] <==> servers :: USB Keys
+
+How we can create our own key? :: Windows --> PuttyGen
+
+PuttyGen download link : https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+Generate a key :: 
+
+Click on generate --> Move the mouse randomly in the empty space
+
+Communication :: Encrypted 
+
+My URI [Publisher] ---------[EBS]--------> Server/Subscriber :: Https :: Valid certificates --> ensure that a specific algorithms are used for encryption
+
+128-bit encryption
+256-bit encryption
+512-bit encryption 
+
+Certificates :: Valid for a specific period of time 
+
+Validity period :
+
+Issued On	Saturday, July 16, 2022 at 12:42:31 PM
+Expires On	Thursday, August 17, 2023 at 12:42:31 PM
+
+My URI [Publisher] ---------[EBS]--------> Server/Subscriber :: Where are the solace certificates + what type of certificates does Solace support?
+
+Solace Console --> Manage --> Certificate Authorities 
+
+Types of certificate that Solace uses OOTB [out of the box]:
+
+a. Client Certificate Authorities : Client Certificate Authorities are used to authenticate the identity of the "client to the server"
+
+b. Domain certificate authorities : Domain Certificate Authorities authenticate the identity of the event broker service to clients and other event broker services
+
+NOT allowing to load a sample certificate file ::  validating the "identity of the client to the server."
+
+Client --> My account --> Add a demo certificate
+<NO HANDSHAKE --> VALIDATION --> NULL]
+
+Server --> Solace PubSub+ Host --> Nothing on the server side for the cert
+
+MCQ : Solace + Solace CLI + What is the max size of Queue/Topic Template name? + REST + Microservices + Different port numbers
+
+- Read
+- Start making own notes
+- Read the questions carefully 
+
+Scenarios :: Solace CLI :: Read the steps that needs to be done
+
+Create the object :: Use a specific name 
+
+Video files :: email : name the video files in a logical manner :: 
+
+S1_v1
+S1_v2
+S1_v3
+S2_v1
+S2-V2
+S2_v3
+
+Whenever the scenario ends :: within 15 mins, the email should be sent
+
+dibya@ecdzone.com
+
+==> If you have any questions, do ask
+
+==> Solace Hardware - Theory 
+
+==> Practice the different Solace PubSub+ + Solace CLI commands
+
+==> Preparing the exam
+
+1. Solace Appliances 
+
+-> What are the Solace appliances 
+-> What do the Solace appliance tries to achieve
+-> What are the versions of the Solace Appliances? 
+-> What are the architecture + components that are present in Solace Appliance
+
+https://solace.com/products/event-broker/appliance/
+
+https://solace.com/company/customers/rbc/
+
+Transactions : Computer Transactions ==> Storage + Compute capacity + Network capacity
+
+Storage capacity : HDD/Data storage
+Compute capacity : Processing power
+Network Capacity : Networking aspects :: Physical ports + Communication + Failover mechanism 
+
+What are the different types of infrastructure present : Cloud Env --> AWS 
+
+- Hardware
+- Software
+- Network
+
+Cloud env :: Pay-as-you-go :: More the pay, more the features 
+
+Solace PubSub+ :: Different types of accounts : 
+
+- Higher the monthly billing, more is the service
+
+Developer Class ---> Enterprise 500k, Enterprise 250K 
+
+Solace Appliances : 2 different versions :
+
+- v3530 --> Working on 
+- v3560
+
+Solace Appliance : 10 years :: v3260 --> v3530/v3560
+
+
+- HAA
+- data loss :: Guaranteed delivery or persistent storages
+- Fault tolerance
+- What happens if the data center or the hardware devices goes for a toss : Backup comes into the picture
+
+What is the meaning of Throughput + Latency?
+
+
+Solace Appliances :
+
+- Persistent messaging
+- Non-persistent messaging
+
+Guaranteed messaging/Persistent messaging ::
+
+a. Throughput would be lesses than non-persistent
+b. Point-point 
+
+Fan-out : Concept Maximum number of Digital inputs --> outputs :: Logical + Physical
+
+Solace Console :: High Availability :: Single Node
+
+High Availability :: Single Node --> Multi Node Routing [MNR]
+
+Some of the concepts :
+
+- FPGAs
+- Data Plane
+- Control Plane
+- field-serviceable power supplies
+- Solid-state disks
+
+--> What is control plane and what is data plane? : Admin 
+
+- Control
+- data plane
+- management plane : Monitoring plane :: Event insights + DataDog/Splunk + show <object/thing> details
+
+Control Plane :: 
+
+- Decides how the data is managed --> manages that how the data is routed in the env/network
+- Would use different protocols to managge the comm between the different systems
+- Identify the routes
+- Data Management --> Decisions to be taken : How the data routing + processed + routing
+
+How does it identify what is the best possible route? :: OSPF
+
+OSPF Protocol :: Open Shortest Path First
+
+Hyd :: hbo.com ---[hops1]------[hops2]---------> [SFO DC] 
+
+Networking ? 
+
+Data Plane :
+
+- For the communication :: Different systems
+- LAN [Ethernet] or WiFi
+- Forwarding the actual IP packets :: created on the plane
+
+Solace Appliances --> FPGAs features
+
+FPGA : 
+
+- Field Programmable Gate Array
+- Used in digital and logical units
+- IC : Integrated Circuit
+
+Why Solace appliance uses FPGA? 
+
+- Customers can configure/reconfigure after the manufacturing 
+- Support available for field-programmable 
+
+IC's :: Most of the OEM's : They do not allow :: customization by the customers
+
+Who are the customers : You and ME? OR Using the solace appliance in DC's 
+
+Field-Programmable Power Services
+
+Solid State Disk [SSD] :
+
+- Light-weight 
+- Power efficient 
+- How the vibrations are handled :: Does it having moving parts --> Minimal 
+- In case of accidental drops : survival chances are better
+- Digital Memory Chips
+
+What are the some of the internal features of these Solace Appliances :
+
+a. FPGA IC's
+b. Field Programmable Support
+c. Different plane supports - Control/Data/Management
+d. Solid State Disk
+f. High N/w capacity
+g. HAA 
+h. Support multi protocol/multi language
+i. Both persistent & non-persistent data storages
+
+Can we see the appliances :: YES 
+
+Where are the devices placed :: Data Center --> How are they placed in the Data Centers :: Rack Mounted Devices
+
+- What are Racks?
+- What are Rack Mounted Devices?
+- What are the type of Rack Mounts
+
+Solace Appliance v3530/v3560 :: Rack Mounted Devices
+
+--> Appliances :: Would have different components 
+
+--> You ideally MAY NOT be directly working with a hardware device :: 
+
+Whenever changes in the happens --> Hardwares configuration has to be managed by the Solace Admin :: 
+
+- Initial Setup
+- Services : Up and down
+- Replacement :: What are the config to be handled
+
+Front Panels of v3530 :
+
+a. Front-end LED : 3 states 
+
+-  Color - Blue : Appliance is running well
+-  Color - Red : Issues
+-  Blinking/flashing blue - Hardware is initialized BUT software is NOT initialized
+
+b. Rear Panel :
+
+- On/Standby Button
+- 2 power supply slots
+- NAB Slots [Network Accelerator Blade] 
+- HBA Slots [Host Bus Adapter]
+- ADB Slot [Assured Delivery Blade] 
+- 2 Blade Status LED's [1-3][4-6] 
+
+SOP : Standard Operating Procedure
+
+NAB : Network Accelerator Blade
+ADB : Assured Delivery Blade
+HBA : Host Bus Adapter
+TRB : Topic Routing Blade
+
+
+Solace CLI : 
+
+Is it possible to check the hardware details? :: show hardware detail
+
+What is the version that is used by Appliances? :: show version
+
+PubSub+ CLI --> Host :: VM running on Solace Cloud :: There is NO appliance
+
+What is the default EBS software ver being used : 10.4
+
+Appliances : Different versions of the software being installed --> Default or upgraded or downgraded ver :: based on the objectives to be attained
+
+command : show version
+
+Software installed in the appliance : Data plane/control plane/management plane
+
+==> What is Blade? IBM/Dell/DXC -- Blade Servers
+
+Blade --> Bleed --> High Performance Engineering
+
+Deliver scalability and "high density" with this modular blade server. Designed for HPC, XaaS, and virtualization.
+
+High Density --> Associated with grouping of the resources [CPU/RAM/Storage/Network/etc] 
+Modular feature --> Scale-in or scale-out on-demand basis [on need basis] 
+Overall concept of blades --> HPC :: High performance computing
+
+HPC --> 
+
+- Extreme high availability
+- Extreme high transactions/data transfer
+- Speed 
+
+v3530 --> How many slots : 6
+v3560 --> How many slots : 8
+
+1. What is Network Accelerator Blade? 
+
+- All the actions/activities related to High Speed I/O in Solace deployments
+- Manages all the protocols + Protocol Terminations [SMF/Routing/Finding the best path/Internal]
+- Manage : Network Adapters + PCI's [Hardware slots : Mother board] 
+- Management Plane
+
+2. NAB Videos :
+
+https://www.youtube.com/watch?v=P_RB-eVhvW0
+https://www.youtube.com/watch?v=39fhF4ikEKo&t=211s
+
+
+Power --> Cooling process
+
+If upgraded or replaced :: How the power consumption gets modified at the peak of the performance? :: Power Envelope
+
+--> No need to change your apps if horizontally scaling your middleware? 
+
+https://community.fs.com/blog/understanding-link-aggregation-control-protocol.html
+
+LAG : Link Aggregation Group 
+
+LACP : Link Aggregation Control Protocol
+
+Hardwares --> Physical ports : 6-8 
+
+- How the throughput from multiple network connections can be combined together and can be fed into a single connection
+- LAG ensures that :: There is redundancy --> In case of failovers, if one of the physical links, the other physical links can work and take backup role
+
+LAG :: Process --> Trunking + Bundling + Bonding + Channeling
+
+Solace --> Appliance --> NAB --> LAG for communication :: High network bandwidth + HAA 
+
+Active & Standby :: Solace --> HAA :: Backup + Redundancy 
+
+In a network : 1 active LAG + Many standby LAG
+
+If an active fails, then one of the standby's will take the active role
+
+Network :: PDC vs BDC
+
+PDC : Primary Domain Controller
+BDC : Backup domain controller
+
+In a network : 1 PDC and many BDC || If the PDC fails, one of the BDC's ------> PDC
+
+Practice the CLI + GUI activities ::
+
+1. Queues
+Queue-template
+Config
+
+2. Client-usernames + ACL + CP
+Bind different CU with different ACL + CP
+Assign the permissions : Client connect/Pub/Sub
+
+show?
+
+??
+
+Different exec levels
+
+Play with the configurations
+
+What is the role of Bridge in Solace? 
+
+Data Streaming : yes or NO :: scenario about data streaming? 
+
+Solace CLI -->  Create queue 
+
+What is the max size of the queue name? 
+
+Solace --> Solace handles High Message Volumes? + How is it scalable? 
+
+- Message distribution can happen across multiple brokers
+- DMR : Dynamic Message Routing --> Bridges 
+
+What are the components that makes Solace architecture distributed? 
+
+What are the steps to be followed in Solace CLI to create client-username? 
+
+Solace [EBS : software/hardware] :: client-username, acl-profile, client-profile
+
+Solace [PubSub+ Solace Cloud]  users? :: 
+
+- Where can we create Solace users? 
+- Is it possible to invite users in my account? 
+- Who takes care of the user level permissions for Solace? 
+
+- Invite users into our accounts
+- Invite the users --> give some permission to the users : Viewer/Admin/Event Portal/Mission Control 
+
+Tech feature : Solace Users --> Permissions for the user access :: IAM : Identity and Access Management 
+
+IAM : Identity and Access Management :: Solace User managment [internal] :: IAM 
+
+
+IAM vendors:  Microsoft/Oracle/Sailpoint 
+
+How does Solace ensure message order within a topic for subscriber? 
+
+How Solace manages the message-queues ? 
+
+Solace [unique sequence number to each message [message-ID]] --> msg-id
+
+message priorities : 0-9
+
+message being published in a queue - 1 part 
+
+how to specify the priorities for the message being queued - 2 part
+
+
+MsgID - 1
+
+Message Priority - 2
+
+MsgID - 10
+
+Message Priority - 9
+
+Platinum member of a bank --> Call center number :: Privilege :: HIGH priority : less than 30 sec
+
+Simple member of a bank --> Call center number  :: LOW priority : less than 10 mins
+
+What's the role of Message-VPN in Solace? 
+
+Who will manage the Topic endpoints & queues?  :: Users --> manage access 
+
+- Solace Admin : Manage any of the resource/objects in Solace env
+- Developer service type a/c --> Creator of the a/c --> Admin --> manage all resources
+
+Mission Control --> Cluster Manager 
+
+- In this developer service a/c --> invite users --> assign IAM permissions :: 
+
+What is the role of an API in Solace messaging? 
+
+subscriber.session = solace.SolclientFactory.createSession({
+    // solace.SessionProperties
+    url:      hosturl,
+    vpnName:  vpn,
+    userName: username,
+    password: pass,
+});
+// define session event listeners
+    /*...see section Session Events...*/
+// define message event listener
+    /*...see section Receiving a message...*/
+// connect the session
+try {
+    subscriber.session.connect();
+} catch (error) {
+    subscriber.log(error.toString());
+}
+
+Where do we hold all the logic or the definitions programmatically that are used by API? :: SDK : Software Development Kit
+
+API --> Try to use the functions [defined] --> SDK 
+
+==> Is it possible to configure access type of queues in Solace CLI? :: YES --> HOW? 
+
+access-type [exclusive | non-exclusive] 
+
+Queue --> Access type is defined 
+
+can i modify the access type directly? :: NO --> Shut down the queue
+
+Guaranteed delivery in case of network failure ? :: YES
+
+S1 : Where is the failure arising : Pub-EBS --> Boundary defition --> 
+
+S2 : Where is the failure arising : EBS-Sub : ACK --> Subscriber has not "process" the message --> ACK is not sent and the message remains in the message spool of EBS
+
+S3 : EBS Software OR EBS Appliance : Appliance --> ADB : Assured Delivery Blade 
+
+What is the maximum size of queue that it can hold? == What is the range of message queued quota in Queue settings : 0 - <max number :: 6M MB> 
+
+5000 - default
+
+Difference between direct vs guaranteed messaging
+
+What is the package that we can use in NodeJS to implement Async feature? Promise-Resolve-Await :: async
+
+fs : file systems
+http : request-response
+sync : NO package
+async : async :: Promise-Resolve-Await
+
+12/08 : 
+
+1. All in TEAMS meeting from 0900 
+2. MCQ : 0930-1000 
+
+Break till 1015
+
+3. Scenario : 1030-1130  
+4. Upload + share the videos by 1145 : dibya@ecdzone + Divya [@alchemysolutions]
+
+Video recording :
+
+a. Meaningful video file names
+b. Time seen in the video recording
+
+Scenario questions :: end goal : 1,2,3,4,5 : not needed : 1-3-2-5 :: Final goals
+Use the names for the objects --> exact names as asked for 
+
+Logical intermediary steps 
+
+5. Break till 12 noon - EOD
+
+Post 12 noon :: Continue with your daily activity tracker 
+
+Monday : 1115-1130
+
+All of you --> Send an individual email with Github updates
+
+
+Solace Developer  - Application :: How the services are communicated/schema/application context + Solace SDK/API
+
+Solace Admin - Solace PubSub+ Cloud + CLI + Actions with object/things/configurations/monitoring + Hardware
+
+Several services --> pushing the messages + consuming 
+
+Client-usernames :: NEVER touch the solace pubsub+ platform
+
+Client-username [services] :: publish-topic/subscribe-topic/push to queues/message speed/etc etc
+
+
+Messages --> Pub --> EBS --> Sub
+<messages> :: <API - WSS> : Binded with certificates : 
+
+- NOT any more plain text
+- JP Morgan Chase --->   <Solace EBS> -----> <Partners/subs/consumers>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
