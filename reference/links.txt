@@ -1,0 +1,40 @@
+Netflix Open Source Software Center
+https://netflix.github.io/
+
+Ensuring 5 Nines Uptime | 99.999 Uptime- Stratus Technologies
+https://www.stratus.com/about/company-information/uptime-meter/
+
+Meta Developer Documentation | Meta APIs, SDKs & Guides
+https://developers.facebook.com/docs/
+
+LinkedIn Developer Solutions
+https://developer.linkedin.com/
+
+Profile API - LinkedIn | Microsoft Learn
+https://learn.microsoft.com/en-us/linkedin/shared/integrations/people/profile-api?context=linkedin%2Fcompliance%2Fcontext&view=li-lms-unversioned&preserve-view=true
+
+martinfowler.com
+https://martinfowler.com/
+
+A pattern language for microservices
+https://microservices.io/patterns/index.html
+
+Documentation | Node.js
+https://nodejs.org/en/docs
+
+npm
+https://www.npmjs.com/
+
+List of HTTP status codes - Wikipedia
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+URI vs URL (What's the Difference?) | RapidAPI
+https://rapidapi.com/blog/url-vs-url/
+
+Git and GitHub Tutorial – Version Control for Beginners
+https://www.freecodecamp.org/news/git-and-github-for-beginners/
+
+Link Aggregation, LAG and LACP Tutorial | FS Community
+https://community.fs.com/blog/understanding-link-aggregation-control-protocol.html
+
+

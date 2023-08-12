@@ -1,0 +1,58 @@
+node.js api
+https://docs.solace.com/API/Messaging-APIs/NodeJS-API/node-js-home.htm
+
+node.js tutorial
+https://tutorials.solace.dev/nodejs
+
+Solace PubSub+ Technical Documentation
+https://docs.solace.com/#splearning
+
+Service Class Options for Event Broker Services
+https://docs.solace.com/Cloud/service-class-limits.htm
+
+Sample Application Domains
+https://docs.solace.com/Cloud/Event-Portal/event-portal-sample-application-domains.htm
+
+Understanding Solace Endpoints: Queues vs. Topic Endpoints | Solace
+https://solace.com/blog/queues-vs-topic-endpoints/
+
+Topic Endpoints and Queues
+https://docs.solace.com/Get-Started/topic-endpoints-queues.htm
+
+Default Port Numbers
+https://docs.solace.com/Admin/Default-Port-Numbers.htm
+
+Inside a Solace Message, Part 1: An Introduction | Solace
+https://solace.com/blog/inside-solace-message-introduction/
+
+Configuring Endpoint Templates
+https://docs.solace.com/Messaging/Guaranteed-Msg/Configuring-Endpoint-Templates.htm
+
+Topic Hierarchy and Topic Architecture Best Practices | Solace
+https://solace.com/blog/topic-hierarchy-best-practices/
+
+PubSub+ Insights | Proactive Advanced Event Broker Monitoring | Solace
+https://solace.com/products/event-broker/cloud/pubsub-insights/?_ga=2.252931273.1943965051.1691318146-329369707.1690529431&_gl=1*zl47su*_ga*MzI5MzY5NzA3LjE2OTA1Mjk0MzE.*_ga_XZ3NWMM83E*MTY5MTY0MDc3Mi40NS4xLjE2OTE2NDA5NDcuMC4wLjA.
+
+ACL Overview
+https://docs.solace.com/Security/ACL-Overview.htm
+
+ACL Configuration
+https://docs.solace.com/Security/Managing-Access-Control-Lists.htm#Assign-ACLs-to-Usernames
+
+Using Client Profiles and Client Usernames
+https://docs.solace.com/Cloud/client-profiles.htm
+
+Configuring Client Profiles
+https://docs.solace.com/Security/Configuring-Client-Profiles.htm
+
+Changing Appliance Software
+https://docs.solace.com/Appliance/Changing-Software-Loads.htm
+
+Appliance Walkthrough Videos
+https://docs.solace.com/Appliance/Appliance-Set-Up/Appliance-Walkthrough-Videos.htm
+
+NAB Replacement
+https://docs.solace.com/Appliance/Hardware-Maintenance-Tasks/Replacing-NABs.htm
+
+
