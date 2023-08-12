@@ -1,0 +1,159 @@
+Solace cli commands
+
+create queue and topic subscriptions
+
+In GUI:
+
+Cluster manager --> ebs(mytestservice) --> manage--> queues
+Create queue--> queuename(queue01)--> settings(config if needed)--> apply
+Get into queue--> subscriptions --> add subscriptions (add taxanomy - * , >)
+Cluster-manager--> service --> try me --> publish message
+check messages queued or not
+Disable outgoing in queue settings so that subscriber won't recieve msg (if this is the criteria)
+Queue -->settings-->edit
+
+
+
+
+In CLI:
+
+General commands
+??
+<command>?
+show queue *
+show message-vpn change-message-vpn
+
+enable
+config
+message-spool message-vpn change-message-vpn
+create queue queuecli01
+
+Navigate into the queue from start
+enable
+config
+message-spool message-vpn change-message-vpn
+queue queuecli01
+
+To see queue details
+show queue *
+show queue queuecli01 detail
+
+config properties
+
+(Egress should be shutdown to changing access type)
+access-type exclusive/non-exclusive
+
+max-spool-usage 100 to config messages queued quota
+
+(Egress should be shutdown to changing access type)
+owner <owner name>
+owner cu01
+
+(Eggress should be shutdown to changing access type)
+Non-owner permissions
+permission all (consume, read-only, delete, modifiy topic)
+
+Maximum consumercount
+max-bind-count <value>
+max-bind-count 100
+
+no shutdown (incoming & outgoing enabled)
+no shutdown( ingress,eggress,full)
+
+no consumer-ack-propagation
+
+To add topic in subscription
+subscription topic animals/domestic/cat
+
+Create queue template:
+In GUI:
+Bu
+Cluster manager --> ebs(mytestservice) --> manage--> queues
+Navigate to templates -->create queue template--> name(queuet01)
+Queue name filter --> zomato/customers/pin/*
+Owner - it can be accessed by all so no owner
+Other settings can be configured
+
+In CLI:
+
+enable
+config
+message-spool message-vpn change-message-vpn
+Create queue-template queuet02 
+Enter existing queue template: queue-template queuet01
+name-filter zomato/customers/pin/*
+access-type(exclusive/non exclusive)
+durability-override (non-exclusive)
+access-type non-exclusive
+max-spool-usage
+Permission all consume
+max-bind-count 100
+no consumer-ack-propagation
+
+
+
+
+
+Solace cli commands 2
+
+
+Client username
+
+In GUI
+
+Cluster manager --> ebs --> manage--> access control--> client-username --> new
+Enable
+If needed change password
+Bind to cp and acl as required(default)
+enable  guaranteed endpoint override and subscription manager if needed
+
+In CLI
+
+enable
+config
+Create client-username cu06 message-vpn change-message-vpn
+Enter into existing client user
+client-username cu06 message-vpn change-message-vpn
+acl-profile <name>
+client-profile<name>
+guaranteed-endpoint-permission-override
+Subscription-manager
+(No shutdown to enable) but to change acl profile it need to disabled
+
+ACL profile
+
+In GUI
+Cluster manager --> ebs --> manage--> access control--> client-username --> new
+Connect allow give exceptions if any
+new exeptions are in cidr format
+192.168.1.10/15 or 192.168.1.10/24
+Publish & subscribe allow/disallow as per needs
+Exceptions are topics cat/mouse/dog
+
+In CLI
+enable
+config
+create acl-profile aclpcli01 message-vpn change-message-vpn
+Enter into existing : acl-profile aclpcli01 message-vpn change-message-vpn
+Client-connect
+default-action allow/disallow
+Publish-topic
+default-action allow/disallow
+exceptions smf/mqtt list taxanomy(cats/rats/dogs)
+We can add multiple in online
+Subscribe-topic
+default-action allow/disallow
+exceptions smf/mqtt list taxanomy(cats/rats/dogs)
+
+Bind client username with acl profile
+Exit
+client-username cu06 message-vpn change-message-vpn
+Shutdown
+acl-profile aclpcli01
+show client-username cucli01 detail
+
+Client profile:
+In GUI
+Cluster manager-->ebs--> manage--> client profile
+Add cp01
+Copy queue settings to bind it to queue-template
